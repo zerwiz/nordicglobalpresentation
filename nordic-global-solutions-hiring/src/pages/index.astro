@@ -184,6 +184,18 @@ const siteUrl = 'https://nordicglobal.netlify.app';
       </div>
     </div>
 
+    <p class="meetings-label">Community Meetings</p>
+    <div class="meetings">
+      <a href="https://discord.gg/HtKyx8j4Cs?event=1374706204193984532" target="_blank" rel="noopener" class="meeting-card">
+        <strong>CO-FIKA</strong>
+        <span>Daily ritual sync — pause, connect, co-evolve. 20–60 min.</span>
+      </a>
+      <a href="https://discord.gg/GJPMeKeGca?event=1370174743453372436" target="_blank" rel="noopener" class="meeting-card">
+        <strong>Freelancer Meets Freelancer</strong>
+        <span>Weekly collaboration meetup. Thursdays 20:00–21:00 GMT.</span>
+      </a>
+    </div>
+
     <div class="cta-group">
       <a href="https://cal.com/whynotproductions/join-the-team?duration=15&overlayCalendar=true" target="_blank" rel="noopener" class="btn-join">Join the Team</a>
       <a href="/slides" class="btn-slides">View Full Presentation →</a>
@@ -380,6 +392,54 @@ const siteUrl = 'https://nordicglobal.netlify.app';
   .platforms span strong,
   .platforms button strong { color: var(--gold-soft); font-weight: 500; }
 
+  .meetings-label {
+    font-size: 0.85rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 1rem;
+    font-weight: 500;
+  }
+
+  .meetings {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .meeting-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: var(--surface-glass);
+    backdrop-filter: blur(12px);
+    border: 1px solid var(--border);
+    padding: 1rem 1.5rem;
+    border-radius: 12px;
+    text-decoration: none;
+    color: var(--text-muted);
+    max-width: 18rem;
+    transition: border-color 0.2s, color 0.2s;
+    min-height: 44px;
+  }
+  .meeting-card:hover {
+    border-color: var(--border-glow);
+    color: var(--gold-soft);
+  }
+  .meeting-card strong {
+    color: var(--gold-soft);
+    font-weight: 500;
+    font-size: 1rem;
+    margin-bottom: 0.35rem;
+  }
+  .meeting-card span {
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
+
   .cta-group {
     display: flex;
     flex-direction: column;
@@ -512,6 +572,8 @@ const siteUrl = 'https://nordicglobal.netlify.app';
     .landing .tagline { font-size: 1.1rem; }
     .landing .intro { font-size: 1rem; }
     .platforms { grid-template-columns: repeat(2, auto); gap: 0.5rem; margin-bottom: 2rem; }
+    .meetings { flex-direction: column; align-items: center; margin-bottom: 2rem; }
+    .meeting-card { max-width: 100%; padding: 0.875rem 1.25rem; }
     .platforms span { font-size: 0.8rem; padding: 0.5rem 0.75rem; }
     .btn-slides { padding: 0.875rem 1.5rem; font-size: 1rem; min-height: 44px; min-width: 44px; }
     .btn-website { font-size: 0.95rem; padding: 0.5rem 0; }

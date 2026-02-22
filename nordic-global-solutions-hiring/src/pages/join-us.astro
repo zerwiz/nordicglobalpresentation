@@ -1,12 +1,32 @@
 ---
 import Base from '../layouts/Base.astro';
+const siteUrl = 'https://nordicglobal.netlify.app';
 ---
 
 <Base>
   <Fragment slot="head">
+    <!-- Open Graph for social crawlers (Facebook, WhatsApp, etc.) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={`${siteUrl}/join-us/`} />
+    <meta property="og:title" content="Join Us — Nordic Global Solutions" />
+    <meta property="og:description" content="Join us. Program. Open source. We're looking for people who want to learn, contribute, and build the future." />
+    <meta property="og:image" content={`${siteUrl}/og-image.jpg`} />
+    <meta property="og:image:secure_url" content={`${siteUrl}/og-image.jpg`} />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Join Us — Nordic Global Solutions" />
+    <meta property="og:site_name" content="Nordic Global Solutions" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Join Us — Nordic Global Solutions" />
+    <meta name="twitter:description" content="Join us. Program. Open source. We're looking for people who want to learn, contribute, and build the future." />
+    <meta name="twitter:image" content={`${siteUrl}/og-image.jpg`} />
+    <meta name="twitter:image:alt" content="Join Us — Nordic Global Solutions" />
     <title>Join Us — Nordic Global Solutions</title>
     <meta name="description" content="Join us. Program. Open source. We're looking for people who want to learn, contribute, and build the future." />
     <meta name="robots" content="noindex, nofollow" />
+    <link rel="canonical" href={`${siteUrl}/join-us/`} />
   </Fragment>
 
   <a href="/" class="back-link">← Back to landing</a>
@@ -45,6 +65,27 @@ import Base from '../layouts/Base.astro';
     </div>
 
     <div class="slide" data-n="4">
+      <p class="caps">Community</p>
+      <h1>What is CO-FIKA?</h1>
+      <p>CO-FIKA is your daily ritual sync with the NorthStarOS community — a 20–60 minute space to pause, connect, share state, and co-evolve.</p>
+      <p>Inspired by the Nordic fika tradition, it's not a meeting — it's a ritual pause in time to align together at the edge of meaningful tech, community, and inner work. It's light. It's honest. It's alive.</p>
+      <p>One part reflection. One part creation. One part evolution.</p>
+      <p class="cta">
+        <a href="https://discord.gg/HtKyx8j4Cs?event=1374706204193984532" target="_blank" rel="noopener" class="cta-discord">Join CO-FIKA on Discord</a>
+      </p>
+    </div>
+
+    <div class="slide" data-n="5">
+      <p class="caps">Community</p>
+      <h1>Freelancer Meets Freelancer</h1>
+      <p>Weekly Collaboration Meetup — break the isolation of freelancing with our weekly meetup designed to help independent professionals connect, collaborate, and grow together.</p>
+      <p>Every Thursday 20:00–21:00 GMT. Join fellow freelancers across all fields to share projects, find collaborators, swap skills, and build your professional network on our Discord server.</p>
+      <p class="cta">
+        <a href="https://discord.gg/GJPMeKeGca?event=1370174743453372436" target="_blank" rel="noopener" class="cta-discord">Join Freelancer Meetup on Discord</a>
+      </p>
+    </div>
+
+    <div class="slide" data-n="6">
       <div class="hero">
         <h1>Join the <span class="highlight">Team</span></h1>
         <div class="divider"></div>
@@ -56,6 +97,7 @@ import Base from '../layouts/Base.astro';
           <a href="https://discord.com/invite/HtKyx8j4Cs" target="_blank" rel="noopener" class="cta-discord">Join Discord</a>
           <a href="https://www.nordicglobalsolutions.com" target="_blank" rel="noopener">www.nordicglobalsolutions.com</a>
         </p>
+        <p class="cta-note">Join our weekly Discord meetings.</p>
         <p class="company">Nordic Global Solutions</p>
       </div>
     </div>
@@ -180,6 +222,7 @@ import Base from '../layouts/Base.astro';
   .hero .tagline { font-size: 1.5rem; color: var(--text-muted); margin-bottom: 1.5rem; font-weight: 400; }
   .hero p { max-width: 32rem; margin-left: auto; margin-right: auto; }
   .slide .cta { font-size: 1.35rem; margin-top: 2.5rem; }
+  .slide .cta-note { font-size: 1rem; color: var(--text-dim); margin-top: 0.5rem; font-style: italic; }
   .slide .cta-join {
     display: inline-block;
     background: linear-gradient(135deg, rgba(212,175,55,0.2) 0%, rgba(0,229,255,0.15) 100%);

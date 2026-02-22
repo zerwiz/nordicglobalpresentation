@@ -5,6 +5,12 @@ const siteUrl = 'https://nordicglobal.netlify.app';
 
 <Base>
   <Fragment slot="head">
+    <meta property="og:image" content={`${siteUrl}/og-slides.jpg`} />
+    <meta property="og:image:secure_url" content={`${siteUrl}/og-slides.jpg`} />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Build the Future of Tech — Nordic Global Solutions Presentation" />
     <title>Build the Future of Tech — Nordic Global Solutions Presentation</title>
     <meta name="description" content="Hiring presentation: Ona, WorkFlowSpace, Affiliate Flow, BitNexus, Mimir, AI Dev Suite. 12 slides. We're seeking people to build the future of technology." />
     <meta name="keywords" content="Nordic Global Solutions, Ona, WorkFlowSpace, Affiliate Flow, BitNexus, Mimir, AI Dev Suite, Debugger, presentation, hiring, tech jobs, AI operating system, Solin, knowledge graph, RAG" />
@@ -32,12 +38,6 @@ const siteUrl = 'https://nordicglobal.netlify.app';
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Build the Future of Tech — Nordic Global Solutions Presentation" />
     <meta property="og:description" content="Hiring presentation: Ona, WorkFlowSpace, Affiliate Flow, BitNexus, Mimir, AI Dev Suite. 12 slides. Join us to build the future." />
-    <meta property="og:image" content={`${siteUrl}/og-image.jpg`} />
-    <meta property="og:image:secure_url" content={`${siteUrl}/og-image.jpg`} />
-    <meta property="og:image:type" content="image/jpeg" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="Nordic Global Solutions — Build the Future of Tech" />
     <meta property="og:url" content={`${siteUrl}/slides`} />
     <meta property="og:site_name" content="Nordic Global Solutions" />
     <meta property="og:locale" content="en_US" />
@@ -46,12 +46,13 @@ const siteUrl = 'https://nordicglobal.netlify.app';
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Build the Future of Tech — Nordic Global Solutions Presentation" />
     <meta name="twitter:description" content="Hiring presentation: Ona, WorkFlowSpace, Affiliate Flow, BitNexus, Mimir, AI Dev Suite. 12 slides. Join us." />
-    <meta name="twitter:image" content={`${siteUrl}/og-image.jpg`} />
-    <meta name="twitter:image:alt" content="Nordic Global Solutions — Build the Future of Tech" />
+    <meta name="twitter:image" content={`${siteUrl}/og-slides.jpg`} />
+    <meta name="twitter:image:alt" content="Build the Future of Tech — Nordic Global Solutions Presentation" />
     <meta name="twitter:label1" content="Slides" />
     <meta name="twitter:data1" content="12" />
     <meta name="twitter:label2" content="Platforms" />
     <meta name="twitter:data2" content="Ona, WorkFlowSpace, Affiliate Flow, BitNexus, Mimir, AI Dev Suite" />
+    <link rel="image_src" href={`${siteUrl}/og-slides.jpg`} />
     <script type="application/ld+json" set:html={JSON.stringify({
       "@context": "https://schema.org",
       "@graph": [
@@ -63,7 +64,7 @@ const siteUrl = 'https://nordicglobal.netlify.app';
           "url": `${siteUrl}/slides`,
           "author": { "@type": "Organization", "name": "Nordic Global Solutions", "url": siteUrl },
           "publisher": { "@type": "Organization", "name": "Nordic Global Solutions", "url": siteUrl, "logo": { "@type": "ImageObject", "url": `${siteUrl}/icon.svg` } },
-          "image": `${siteUrl}/og-image.jpg`,
+          "image": `${siteUrl}/og-slides.jpg`,
           "mainEntityOfPage": { "@type": "WebPage", "@id": `${siteUrl}/slides` }
         },
         {
@@ -288,7 +289,7 @@ const siteUrl = 'https://nordicglobal.netlify.app';
         </p>
         <p class="company">Build the future. Nordic Global Solutions.</p>
         <p class="part-of">
-          <a href="https://affliateflow.netlify.app/partners/svein-erik-nilsen" target="_blank" rel="noopener">Svein-Erik Nilsen</a> · <a href="https://affliateflow.netlify.app/partners/craig-martin" target="_blank" rel="noopener">Craig Martin</a> · <a href="https://whynotproductions.netlify.app" target="_blank" rel="noopener">Lars-Josef Lindbom</a> — Co-founders
+          <a href="https://affliateflow.netlify.app/partners/svein-erik-nilsen" target="_blank" rel="noopener">Svein-Erik Nilsen</a> · <a href="https://affliateflow.netlify.app/partners/craig-martin" target="_blank" rel="noopener">Craig Martin</a> · <a href="https://affliateflow.netlify.app/partners/lars-josef-lindbom" target="_blank" rel="noopener">Lars-Josef Lindbom</a> — Co-founders
         </p>
         <p class="part-of"><a href="https://whynotproductions.netlify.app" target="_blank" rel="noopener">WhyNot Productions</a></p>
       </div>

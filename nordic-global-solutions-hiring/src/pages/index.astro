@@ -5,23 +5,23 @@ const siteUrl = 'https://nordicglobal.netlify.app';
 
 <Base>
   <Fragment slot="head">
-    <!-- Open Graph first for social crawlers (Facebook, WhatsApp, etc.) -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content={`${siteUrl}/`} />
-    <meta property="og:title" content="Nordic Global Solutions — Build the Future of Tech" />
-    <meta property="og:description" content="We're seeking people to build the future of technology. Nordic Global Solutions develops Ona, WorkFlowSpace, Affiliate Flow, BitNexus, Mimir, and AI Dev Suite." />
-    <meta property="og:image" content={`${siteUrl}/og-image.jpg`} />
-    <meta property="og:image:secure_url" content={`${siteUrl}/og-image.jpg`} />
+    <meta property="og:image" content={`${siteUrl}/og-index.jpg`} />
+    <meta property="og:image:secure_url" content={`${siteUrl}/og-index.jpg`} />
     <meta property="og:image:type" content="image/jpeg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:image:alt" content="Nordic Global Solutions — Build the Future of Tech" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={`${siteUrl}/`} />
+    <meta property="og:title" content="Nordic Global Solutions — Build the Future of Tech" />
+    <meta property="og:description" content="We're seeking people to build the future of technology. Nordic Global Solutions develops Ona, WorkFlowSpace, Affiliate Flow, BitNexus, Mimir, and AI Dev Suite." />
     <meta property="og:site_name" content="Nordic Global Solutions" />
     <meta property="og:locale" content="en_US" />
+    <link rel="image_src" href={`${siteUrl}/og-index.jpg`} />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Nordic Global Solutions — Build the Future of Tech" />
     <meta name="twitter:description" content="We're seeking people to build the future of technology. Nordic Global Solutions develops Ona, WorkFlowSpace, Affiliate Flow, BitNexus, Mimir, and AI Dev Suite." />
-    <meta name="twitter:image" content={`${siteUrl}/og-image.jpg`} />
+    <meta name="twitter:image" content={`${siteUrl}/og-index.jpg`} />
     <meta name="twitter:image:alt" content="Nordic Global Solutions — Build the Future of Tech" />
     <title>Nordic Global Solutions — Build the Future of Tech</title>
     <meta name="description" content="We're seeking people to build the future of technology. Nordic Global Solutions develops Ona, WorkFlowSpace, Affiliate Flow, BitNexus, Mimir, and AI Dev Suite." />
@@ -197,9 +197,64 @@ const siteUrl = 'https://nordicglobal.netlify.app';
       </a>
     </div>
 
-    <div class="cta-group">
+    <div class="cta-pre-video">
       <a href="/slides" class="btn-slides">View Full Presentation →</a>
       <a href="/join-us" class="btn-slides">Join Us →</a>
+    </div>
+
+    <p class="video-label">Watch</p>
+    <div class="videos-grid">
+      <div class="video-wrapper">
+        <iframe
+          src="https://www.youtube.com/embed/t908lojIB10"
+          title="Nordic Global Solutions — YouTube"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+          class="video-embed"
+        ></iframe>
+      </div>
+      <div class="video-wrapper">
+        <iframe
+          src="https://www.youtube.com/embed/wcjZrZD68T8"
+          title="Nordic Global Solutions — YouTube"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+          class="video-embed"
+        ></iframe>
+      </div>
+      <div class="video-wrapper">
+        <iframe
+          src="https://www.youtube.com/embed/eAWsLCPyLkk"
+          title="Nordic Global Solutions — YouTube"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+          class="video-embed"
+        ></iframe>
+      </div>
+      <div class="video-wrapper">
+        <iframe
+          src="https://www.youtube.com/embed/JaPUokzbp0U"
+          title="Nordic Global Solutions — YouTube"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+          class="video-embed"
+        ></iframe>
+      </div>
+    </div>
+
+    <p class="downloads-label">Downloads</p>
+    <div class="downloads">
+      <a href="/AI_Dev_Suite.pdf" download="AI_Dev_Suite.pdf" class="download-card">
+        <strong>AI Dev Suite</strong>
+        <span>PDF</span>
+      </a>
+      <a href="/Mimir_Intelligent_Nexus.pdf" download="Mimir_Intelligent_Nexus.pdf" class="download-card">
+        <strong>Mimir Intelligent Nexus</strong>
+        <span>PDF</span>
+      </a>
+    </div>
+
+    <div class="cta-group">
       <span class="cta-label">Book a meeting</span>
       <a href="https://cal.com/whynotproductions/join-the-team?duration=15&overlayCalendar=true" target="_blank" rel="noopener" class="btn-join">Join the Team</a>
       <a href="https://discord.com/invite/HtKyx8j4Cs" target="_blank" rel="noopener" class="btn-discord">Join Discord</a>
@@ -256,12 +311,18 @@ const siteUrl = 'https://nordicglobal.netlify.app';
   <div id="modal-zerwiz" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-zerwiz-title">
     <div class="modal">
       <div class="modal-header">
-        <h2 id="modal-zerwiz-title">Lars-Josef Lindbom — Developer & Owner</h2>
+        <h2 id="modal-zerwiz-title">Lars-Josef Lindbom — Builder & Entrepreneur</h2>
         <button type="button" class="modal-close" data-close aria-label="Close">×</button>
       </div>
       <div class="modal-body">
-        <p>Developer & Owner at Nordic Global Solutions. Builds Mimir, AI Dev Suite, and other platforms under WhyNot Productions.</p>
-        <p><a href="https://whynotproductions.netlify.app" target="_blank" rel="noopener">WhyNot Productions →</a></p>
+        <p><strong>Build Systems. Scale Impact.</strong></p>
+        <p>Fifth-generation builder, entrepreneur, and creative visionary—from Nordic construction and extreme sports to AI and communication systems. Josef leads NGS, NGT, WorkFlowSpace, and NorthStarOS, pioneering tools that enhance human collaboration and emotional intelligence in technology.</p>
+        <ul>
+          <li><strong>Fifth-generation roots</strong> — Construction and business. Structure, leadership, and execution from day one.</li>
+          <li><strong>AI & Communication</strong> — NGT, WorkFlowSpace, NorthStarOS—systems that enhance collaboration, organization, and emotional intelligence.</li>
+          <li><strong>Global Vision</strong> — Nordic events and extreme sports to international brands. Projects rooted in ancient wisdom.</li>
+        </ul>
+        <p><a href="https://affliateflow.netlify.app/partners/lars-josef-lindbom" target="_blank" rel="noopener">View full profile →</a> · <a href="https://whynotproductions.netlify.app" target="_blank" rel="noopener">WhyNot Productions →</a></p>
       </div>
     </div>
   </div>
@@ -366,6 +427,9 @@ const siteUrl = 'https://nordicglobal.netlify.app';
   .landing > *:nth-child(16) { animation-delay: 0.8s; }
   .landing > *:nth-child(17) { animation-delay: 0.85s; }
   .landing > *:nth-child(18) { animation-delay: 0.9s; }
+  .landing > *:nth-child(19) { animation-delay: 0.95s; }
+  .landing > *:nth-child(20) { animation-delay: 1s; }
+  .landing > *:nth-child(21) { animation-delay: 1.05s; }
 
   .landing .platforms button {
     opacity: 0;
@@ -385,21 +449,29 @@ const siteUrl = 'https://nordicglobal.netlify.app';
   .landing .meeting-card:nth-child(1) { animation-delay: 0.7s; }
   .landing .meeting-card:nth-child(2) { animation-delay: 0.78s; }
 
+  .landing .download-card {
+    opacity: 0;
+    animation: fadeInUp 0.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  }
+  .landing .download-card:nth-child(1) { animation-delay: 1.05s; }
+  .landing .download-card:nth-child(2) { animation-delay: 1.12s; }
+
   .landing .cta-group > * {
     opacity: 0;
     animation: fadeInUp 0.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
   }
-  .landing .cta-group > *:nth-child(1) { animation-delay: 0.82s; }
-  .landing .cta-group > *:nth-child(2) { animation-delay: 0.88s; }
-  .landing .cta-group > *:nth-child(3) { animation-delay: 0.94s; }
-  .landing .cta-group > *:nth-child(4) { animation-delay: 1s; }
-  .landing .cta-group > *:nth-child(5) { animation-delay: 1.06s; }
-  .landing .cta-group > *:nth-child(6) { animation-delay: 1.12s; }
+  .landing .cta-group > *:nth-child(1) { animation-delay: 0.94s; }
+  .landing .cta-group > *:nth-child(2) { animation-delay: 1s; }
+  .landing .cta-group > *:nth-child(3) { animation-delay: 1.06s; }
+  .landing .cta-group > *:nth-child(4) { animation-delay: 1.12s; }
+  .landing .cta-group > *:nth-child(5) { animation-delay: 1.18s; }
 
   @media (prefers-reduced-motion: reduce) {
     .landing > *,
     .landing .platforms button,
     .landing .meeting-card,
+    .landing .download-card,
+    .landing .cta-pre-video,
     .landing .cta-group > * {
       animation: none !important;
       opacity: 1 !important;
@@ -573,6 +645,97 @@ const siteUrl = 'https://nordicglobal.netlify.app';
     line-height: 1.5;
   }
 
+  .downloads-label {
+    font-size: 0.85rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 1rem;
+    font-weight: 500;
+  }
+
+  .downloads {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .download-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: var(--surface-glass);
+    backdrop-filter: blur(12px);
+    border: 1px solid var(--border);
+    padding: 1rem 1.5rem;
+    border-radius: 12px;
+    text-decoration: none;
+    color: var(--text-muted);
+    max-width: 18rem;
+    transition: border-color 0.2s, color 0.2s;
+    min-height: 44px;
+  }
+  .download-card:hover {
+    border-color: var(--border-glow);
+    color: var(--gold-soft);
+  }
+  .download-card strong {
+    color: var(--gold-soft);
+    font-weight: 500;
+    font-size: 1rem;
+    margin-bottom: 0.35rem;
+  }
+  .download-card span {
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
+
+  .cta-pre-video {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .video-label {
+    font-size: 0.85rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 1rem;
+    font-weight: 500;
+  }
+
+  .videos-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    max-width: 1000px;
+    margin: 0 auto 2.5rem;
+    width: 100%;
+  }
+
+  .video-wrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    background: var(--surface-glass);
+  }
+
+  .video-embed {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+  }
+
   .cta-group {
     display: flex;
     flex-direction: column;
@@ -718,6 +881,11 @@ const siteUrl = 'https://nordicglobal.netlify.app';
     .platforms { grid-template-columns: repeat(2, auto); gap: 0.5rem; margin-bottom: 2rem; }
     .meetings { flex-direction: column; align-items: center; margin-bottom: 2rem; }
     .meeting-card { max-width: 100%; padding: 0.875rem 1.25rem; }
+    .downloads { flex-direction: column; align-items: center; margin-bottom: 2rem; }
+    .download-card { max-width: 100%; }
+    .cta-pre-video { margin-bottom: 2rem; }
+    .videos-grid { display: flex; flex-direction: column; align-items: center; gap: 1rem; margin-bottom: 2rem; max-width: 100%; }
+    .video-wrapper { max-width: 100%; }
     .platforms span { font-size: 0.8rem; padding: 0.5rem 0.75rem; }
     .btn-slides { padding: 0.875rem 1.5rem; font-size: 1rem; min-height: 44px; min-width: 44px; }
     .btn-website { font-size: 0.95rem; padding: 0.5rem 0; }

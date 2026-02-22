@@ -29,15 +29,34 @@
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 
-# Ensure og-image is cacheable and has correct type for social crawlers
+# Ensure OG images are cacheable and have correct type for social crawlers
 [[headers]]
-  for = "/og-image.png"
-  [headers.values]
-    Cache-Control = "public, max-age=86400"
-    Content-Type = "image/png"
-
-[[headers]]
-  for = "/og-image.jpg"
+  for = "/og-index.jpg"
   [headers.values]
     Cache-Control = "public, max-age=86400"
     Content-Type = "image/jpeg"
+
+[[headers]]
+  for = "/og-join-us.jpg"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
+    Content-Type = "image/jpeg"
+
+[[headers]]
+  for = "/og-slides.jpg"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
+    Content-Type = "image/jpeg"
+
+# PDF downloads
+[[headers]]
+  for = "/AI_Dev_Suite.pdf"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
+    Content-Type = "application/pdf"
+
+[[headers]]
+  for = "/Mimir_Intelligent_Nexus.pdf"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
+    Content-Type = "application/pdf"

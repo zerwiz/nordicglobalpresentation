@@ -90,9 +90,18 @@ const siteUrl = 'https://nordicglobal.netlify.app';
           <button type="button" class="modal-close" data-close aria-label="Close">×</button>
         </div>
         <div class="modal-body">
-          <p>Your AI teammate. Solin leads a squad of specialist agents—writers, researchers, developers, marketers—in one thread.</p>
+          <p>Your AI teammate. Solin leads a squad of specialist agents—writers, researchers, developers, marketers—in one thread. <strong>Ona is a CLAW.</strong></p>
           <p><strong>Channels:</strong> Web, Telegram, Discord, WhatsApp, Signal. Text or voice.</p>
-          <p><strong>What you can do:</strong> Content (blogs, social, emails), research, code, design, projects. Integrates with Google, Notion. Secure. Self-host or cloud.</p>
+          <p><strong>What you can do:</strong></p>
+          <ul>
+            <li><strong>Content</strong> — Drafts, blogs, social posts, landing pages, emails</li>
+            <li><strong>Research</strong> — Competitor research, trends, SEO</li>
+            <li><strong>Code</strong> — Implement features, run builds, scripts</li>
+            <li><strong>Design</strong> — Mockups, layouts, visuals</li>
+            <li><strong>Projects</strong> — Tasks, todos, follow-ups</li>
+            <li><strong>Integrations</strong> — Google, email, SMS, social, Notion</li>
+          </ul>
+          <p>All in one place. Secure. Self-host or cloud.</p>
         </div>
       </div>
     </div>
@@ -178,6 +187,8 @@ const siteUrl = 'https://nordicglobal.netlify.app';
     <div class="cta-group">
       <a href="https://cal.com/whynotproductions/join-the-team?duration=15&overlayCalendar=true" target="_blank" rel="noopener" class="btn-join">Join the Team</a>
       <a href="/slides" class="btn-slides">View Full Presentation →</a>
+      <a href="/join-us" class="btn-slides">Join Us →</a>
+      <a href="https://discord.com/invite/HtKyx8j4Cs" target="_blank" rel="noopener" class="btn-discord">Join Discord</a>
       <a href="https://www.nordicglobalsolutions.com" target="_blank" rel="noopener" class="btn-website">www.nordicglobalsolutions.com</a>
     </div>
 
@@ -421,6 +432,31 @@ const siteUrl = 'https://nordicglobal.netlify.app';
     background: linear-gradient(135deg, rgba(0,229,255,0.25) 0%, rgba(212,175,55,0.25) 100%);
     border-color: var(--gold);
     color: var(--gold);
+    transform: translateY(-1px);
+  }
+
+  .btn-discord {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background: #5865F2;
+    border: 1px solid #5865F2;
+    color: #fff;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 12px;
+    font-family: inherit;
+    letter-spacing: 0.03em;
+    transition: all 0.2s;
+    cursor: pointer;
+  }
+  .btn-discord:hover {
+    background: #4752C4;
+    border-color: #4752C4;
+    color: #fff;
     transform: translateY(-1px);
   }
 

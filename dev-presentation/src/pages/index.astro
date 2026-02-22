@@ -1,0 +1,223 @@
+---
+import Base from '../layouts/Base.astro';
+---
+
+<Base>
+  <Fragment slot="head">
+    <title>Dev Presentation — Preview</title>
+    <meta name="robots" content="noindex, nofollow" />
+  </Fragment>
+
+  <div class="slides-wrapper">
+    <div class="slide active" data-n="1">
+      <div class="hero">
+        <h1>Dev <span class="highlight">Preview</span></h1>
+        <div class="divider"></div>
+        <p class="tagline">Preview your slides before deploy.</p>
+        <p>Edit this presentation in <code>dev-presentation/src/pages/index.astro</code></p>
+      </div>
+    </div>
+
+    <div class="slide" data-n="2">
+      <p class="caps">Slide 2</p>
+      <h1>Add Your Content</h1>
+      <p>Use the same structure as the Nordic Global slides. Copy slides from <code>nordic-global-solutions-hiring/src/pages/slides.astro</code> or write your own.</p>
+      <ul>
+        <li><strong>Slide</strong> — Wrap content in <code>&lt;div class="slide" data-n="N"&gt;</code></li>
+        <li><strong>Hero</strong> — Use <code>class="hero"</code> for centered title slides</li>
+        <li><strong>Cards</strong> — Use <code>class="two-col"</code> and <code>class="card"</code></li>
+      </ul>
+    </div>
+
+    <div class="slide" data-n="3">
+      <div class="hero">
+        <h1>Run <span class="highlight">Dev Server</span></h1>
+        <div class="divider"></div>
+        <p class="tagline"><code>cd dev-presentation && npm run dev</code></p>
+        <p>Opens at http://localhost:3000</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide-num"><span id="current">1</span> / <span id="total">3</span></div>
+  <div class="footer-nav">
+    <button id="prev" aria-label="Previous slide">←</button>
+    <button id="next" aria-label="Next slide">→</button>
+  </div>
+
+  <script>
+    const slides = document.querySelectorAll('.slide');
+    const total = slides.length;
+    const currentEl = document.getElementById('current');
+    document.getElementById('total').textContent = total;
+
+    let idx = 0;
+    function show(i) {
+      idx = Math.max(0, Math.min(i, total - 1));
+      slides.forEach((s, k) => s.classList.toggle('active', k === idx));
+      currentEl.textContent = idx + 1;
+    }
+    document.getElementById('prev').onclick = () => show(idx - 1);
+    document.getElementById('next').onclick = () => show(idx + 1);
+    document.addEventListener('keydown', e => {
+      if (e.key === 'ArrowLeft') show(idx - 1);
+      if (e.key === 'ArrowRight') show(idx + 1);
+    });
+
+    let touchStartX = 0;
+    document.addEventListener('touchstart', e => { touchStartX = e.touches[0].clientX; }, { passive: true });
+    document.addEventListener('touchend', e => {
+      const diff = touchStartX - e.changedTouches[0].clientX;
+      if (Math.abs(diff) > 50) diff > 0 ? show(idx + 1) : show(idx - 1);
+    }, { passive: true });
+  </script>
+</Base>
+
+<style>
+  :root {
+    --bg-mid: #08080d;
+    --surface: rgba(255,255,255,0.03);
+    --surface-glass: rgba(255,255,255,0.04);
+  }
+  @media (min-width: 769px) {
+    body { height: 100vh; overflow: hidden; }
+  }
+
+  .slides-wrapper {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+  }
+  .slide {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    min-height: 100vh;
+    padding: 4rem 5rem;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+  }
+  .slide.active {
+    position: relative;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  @media (max-width: 768px) {
+    .slide { min-height: 100vh; height: auto; padding: 5rem 1.5rem 6rem; justify-content: flex-start; }
+  }
+
+  .slide h1 {
+    font-family: 'Syne', sans-serif;
+    font-size: clamp(1.75rem, 5vw, 3.75rem);
+    font-weight: 700;
+    margin: 0 0 1.5rem;
+    letter-spacing: -0.02em;
+    background: linear-gradient(135deg, var(--text) 0%, var(--text-muted) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .slide h1 .highlight {
+    background: linear-gradient(135deg, var(--accent) 0%, var(--gold) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .slide p { font-size: clamp(0.95rem, 2vw, 1.2rem); line-height: 1.8; color: var(--text-muted); margin: 0 0 1rem; font-weight: 300; }
+  .slide code {
+    background: var(--surface-glass);
+    padding: 0.2em 0.5em;
+    border-radius: 6px;
+    font-size: 0.9em;
+    color: var(--gold-soft);
+  }
+  .slide ul { font-size: clamp(0.9rem, 2vw, 1.15rem); line-height: 2; color: var(--text-muted); padding-left: 1.5rem; list-style: none; }
+  .slide ul li { margin-bottom: 0.6rem; padding-left: 1rem; position: relative; font-weight: 300; }
+  .slide ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.65em;
+    width: 4px;
+    height: 4px;
+    background: linear-gradient(135deg, var(--accent), var(--gold));
+    border-radius: 50%;
+  }
+  .slide ul li strong { color: var(--gold-soft); font-weight: 500; }
+
+  .hero { text-align: center; }
+  .hero h1 { font-size: clamp(2rem, 6vw, 4.5rem); margin-bottom: 1.5rem; }
+  .hero .tagline { font-size: 1.5rem; color: var(--text-muted); margin-bottom: 1.5rem; font-weight: 400; }
+  .hero p { max-width: 32rem; margin-left: auto; margin-right: auto; }
+
+  .caps {
+    font-size: 0.8rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 0.75rem;
+    font-weight: 500;
+  }
+
+  .divider {
+    width: 48px;
+    height: 1px;
+    background: linear-gradient(90deg, var(--accent), transparent);
+    margin: 1.5rem 0;
+  }
+  .hero .divider { margin: 2rem auto; background: linear-gradient(90deg, transparent, var(--gold), transparent); width: 80px; }
+
+  .footer-nav {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    display: flex;
+    gap: 0.5rem;
+    z-index: 100;
+  }
+  @media (min-width: 769px) {
+    .footer-nav { bottom: 2rem; right: 2.5rem; }
+  }
+  .footer-nav button {
+    background: var(--surface-glass);
+    backdrop-filter: blur(12px);
+    border: 1px solid var(--border);
+    color: var(--text-muted);
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+    min-height: 48px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 1.25rem;
+    transition: all 0.2s;
+  }
+  .footer-nav button:hover {
+    background: rgba(212,175,55,0.15);
+    border-color: var(--border-glow);
+    color: var(--gold);
+  }
+  .slide-num {
+    position: fixed;
+    bottom: 1rem;
+    left: 1rem;
+    color: var(--text-dim);
+    font-size: 0.8rem;
+    letter-spacing: 0.05em;
+  }
+  @media (min-width: 769px) {
+    .slide-num { bottom: 2rem; left: 2.5rem; font-size: 0.85rem; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .slide { transition: none; }
+  }
+</style>

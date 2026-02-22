@@ -73,7 +73,7 @@ All absolute URLs assume: `https://www.nordicglobalsolutions.com`
 | Tag | Value |
 |-----|-------|
 | title | Build the Future of Tech — Nordic Global Solutions Presentation |
-| description | Hiring presentation: Ona, WorkFlowSpace, Affiliate Flow, BitNexus, Mimir, AI Dev Suite. 11 slides. We're seeking people to build the future of technology. |
+| description | Hiring presentation: Ona, WorkFlowSpace, Affiliate Flow, BitNexus, Mimir, AI Dev Suite. 12 slides. We're seeking people to build the future of technology. |
 | keywords | Nordic Global Solutions, Ona, WorkFlowSpace, Affiliate Flow, BitNexus, Mimir, AI Dev Suite, Debugger, presentation, hiring, tech jobs, AI operating system, Solin, knowledge graph, RAG |
 | author | Nordic Global Solutions |
 | robots | index, follow |
@@ -109,7 +109,7 @@ All absolute URLs assume: `https://www.nordicglobalsolutions.com`
 |----------|-------|
 | og:type | website |
 | og:title | Build the Future of Tech — Nordic Global Solutions Presentation |
-| og:description | Hiring presentation: Ona, WorkFlowSpace, Affiliate Flow, BitNexus, Mimir, AI Dev Suite. 11 slides. Join us to build the future. |
+| og:description | Hiring presentation: Ona, WorkFlowSpace, Affiliate Flow, BitNexus, Mimir, AI Dev Suite. 12 slides. Join us to build the future. |
 | og:image | https://www.nordicglobalsolutions.com/og-image.png |
 | og:image:secure_url | https://www.nordicglobalsolutions.com/og-image.png |
 | og:image:type | image/png |
@@ -127,7 +127,7 @@ All absolute URLs assume: `https://www.nordicglobalsolutions.com`
 |----------|-------|
 | twitter:card | summary_large_image |
 | twitter:title | Build the Future of Tech — Nordic Global Solutions Presentation |
-| twitter:description | Hiring presentation: Ona, WorkFlowSpace, Affiliate Flow, BitNexus, Mimir, AI Dev Suite. 11 slides. Join us. |
+| twitter:description | Hiring presentation: Ona, WorkFlowSpace, Affiliate Flow, BitNexus, Mimir, AI Dev Suite. 12 slides. Join us. |
 | twitter:image | https://www.nordicglobalsolutions.com/og-image.png |
 | twitter:image:alt | Nordic Global Solutions — Build the Future of Tech |
 | twitter:label1 | Slides |

@@ -55,4 +55,5 @@ Build settings in `../netlify.toml`:
 - Slide 8: Mimir — Knowledge & AI
 - Slide 9: AI Dev Suite — Local AI tooling
 - Slide 10: Tech stack
-- Slide 11: Call to action — Join the team, website link
+- Slide 11: Who we're looking for — Learn & build, open source
+- Slide 12: Call to action — Join the team, website link

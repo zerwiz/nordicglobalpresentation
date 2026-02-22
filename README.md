@@ -8,7 +8,7 @@ Static, mobile-friendly presentation showcasing **Ona**, **WorkFlowSpace**, **Af
 
 ## Quick Start
 
-**Local**
+**Local (main site)**
 
 ```bash
 git clone https://github.com/zerwiz/nordicglobalpresentation.git
@@ -18,6 +18,16 @@ npm run dev
 ```
 
 Open http://localhost:4321
+
+**Local (dev preview — separate slide deck)**
+
+```bash
+cd dev-presentation
+npm install
+npm run dev
+```
+
+Open http://localhost:3000 — preview slides before deploying
 
 **Deploy to Netlify**
 
@@ -35,7 +45,7 @@ Config is in [netlify.toml](netlify.toml).
 | Page | Purpose |
 |------|---------|
 | **Landing** (`/`) | Hero, platform overview, CTA to view presentation |
-| **Slides** (`/slides`) | 11-slide deck: platforms, Ona, WorkFlowSpace, Affiliate Flow, BitNexus, Mimir, AI Dev Suite, stack, CTA |
+| **Slides** (`/slides`) | 12-slide deck: platforms, Ona, WorkFlowSpace, Affiliate Flow, BitNexus, Mimir, AI Dev Suite, stack, who we're looking for, CTA |
 | **404** | Custom error page with links back |
 
 **Interaction**
@@ -63,7 +73,7 @@ Config is in [netlify.toml](netlify.toml).
 
 ```
 .
-├── nordic-global-solutions-hiring/   # Astro project
+├── nordic-global-solutions-hiring/   # Astro project (deployed to Netlify)
 │   ├── src/
 │   │   ├── pages/       # index.astro, slides.astro, 404.astro
 │   │   ├── layouts/     # Base.astro
@@ -71,6 +81,9 @@ Config is in [netlify.toml](netlify.toml).
 │   ├── public/         # favicon, icon, og-image, robots, sitemap
 │   ├── slides.md       # Content source
 │   └── dist/            # Build output (gitignored)
+├── dev-presentation/    # Local-only slide preview (not deployed)
+│   ├── src/pages/index.astro
+│   └── npm run dev → http://localhost:3000
 ├── docs/               # Documentation
 │   ├── OVERVIEW.md
 │   ├── COMPANY_PROFILE.md

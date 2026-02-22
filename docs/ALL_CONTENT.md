@@ -9,6 +9,7 @@ Single source of truth for all text, URLs, and content used across the presentat
 | Resource | URL |
 |----------|-----|
 | Website | https://www.nordicglobalsolutions.com |
+| Discord | https://discord.com/invite/HtKyx8j4Cs |
 | Svein-Erik Nilsen (owner) | https://affliateflow.netlify.app/partners/svein-erik-nilsen |
 | Craig Martin (owner & developer) | https://affliateflow.netlify.app/partners/craig-martin |
 | Zerwiz / Lars-Josef Lindbom | https://whynotproductions.netlify.app |
@@ -42,6 +43,8 @@ Single source of truth for all text, URLs, and content used across the presentat
 ### CTAs
 - Join the Team (links to Cal.com: https://cal.com/whynotproductions/join-the-team?duration=15&overlayCalendar=true)
 - View Full Presentation → (links to /slides)
+- Join Us → (links to /join-us — join us, program, open source)
+- Discord (https://discord.com/invite/HtKyx8j4Cs)
 - www.nordicglobalsolutions.com
 
 ### Footer
@@ -133,7 +136,7 @@ Zerwiz · WhyNot Productions
 
 ---
 
-## Slide Deck (11 slides)
+## Slide Deck (12 slides)
 
 ### Slide 1: Hero
 **Build the Future of Tech**
@@ -169,6 +172,8 @@ Web, Telegram, Discord, WhatsApp, Signal. One thread, all your agents. Text or v
 
 ### Slide 4: Ona — What You Can Do
 **Content, Research, Code, Design**
+
+Ona is a CLAW.
 
 - **Content** — Drafts, blogs, social posts, landing pages, emails
 - **Research** — Competitor research, trends, SEO
@@ -237,7 +242,18 @@ React, TypeScript, Rust, Elixir, Phoenix. Cursor, Google AI Suite.
 
 We use OpenAI and Claude, and support self-hosted models like Ollama.
 
-### Slide 11: Call to Action
+### Slide 11: Who We're Looking For
+**Learn & Build in the New Age**
+
+We're searching for people who want to learn how to develop in the new age—AI-assisted coding, modern tooling, and open source.
+
+- **Learn** — Develop with AI, Cursor, and next-gen workflows
+- **Contribute** — Help with our open source repos (Mimir, AI Dev Suite, and more)
+- **Grow** — Work on real products, from idea to production
+
+Whether you're starting out or leveling up—if you're curious and want to build the future, we want to hear from you.
+
+### Slide 12: Call to Action
 **Join the Team**
 
 Help us build Ona, WorkFlowSpace, Affiliate Flow, BitNexus, Mimir, and AI Dev Suite.
@@ -247,6 +263,24 @@ Help us build Ona, WorkFlowSpace, Affiliate Flow, BitNexus, Mimir, and AI Dev Su
 Build the future. Nordic Global Solutions.
 
 **Svein-Erik Nilsen · Craig Martin · Zerwiz — Co-founders · WhyNot Productions**
+
+---
+
+## Join Us Presentation (/join-us)
+
+4 slides. Focus: join us, program, open source.
+
+### Slide 1: Join Us
+**Join Us** — Program. Open source. Build the future. We're looking for people who want to learn, contribute, and grow with us.
+
+### Slide 2: Learn & Program
+**What We Offer** — Learn & Program. Develop in the new age—AI-assisted coding, modern tooling, real projects. Learn (Cursor, AI workflows). Program (React, TypeScript, Rust, Elixir, Phoenix). Grow (real products, idea to production).
+
+### Slide 3: Open Source
+**Contribute & Build** — Help with our open source repos. Mimir, AI Dev Suite, WorkFlowSpace, Affiliate Flow. Whether you're starting out or leveling up—we want to hear from you.
+
+### Slide 4: CTA
+**Join the Team** — Join the Team button, Discord, www.nordicglobalsolutions.com, Nordic Global Solutions.
 
 ---
 
@@ -263,7 +297,7 @@ Build the future. Nordic Global Solutions.
 /home/zerwiz/Presentations/
 ├── nordic-global-solutions-hiring/   # Deploy folder
 │   ├── index.html         # Landing page
-│   ├── slides.html        # 11-slide deck
+│   ├── slides.html        # 12-slide deck
 │   ├── slides.md          # Slide content source
 │   ├── 404.html           # Error page
 │   ├── favicon.svg

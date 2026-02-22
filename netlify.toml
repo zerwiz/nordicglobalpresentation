@@ -5,6 +5,12 @@
   publish = "nordic-global-solutions-hiring/dist"
   command = "cd nordic-global-solutions-hiring && npm install && npm run build"
 
+# Redirect old /preview to /join-us
+[[redirects]]
+  from = "/preview"
+  to = "/join-us"
+  status = 301
+
 # Security and cache headers
 [[headers]]
   for = "/*"

@@ -29,3 +29,9 @@
   [headers.values]
     Cache-Control = "public, max-age=86400"
     Content-Type = "image/png"
+
+[[headers]]
+  for = "/og-image.jpg"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
+    Content-Type = "image/jpeg"

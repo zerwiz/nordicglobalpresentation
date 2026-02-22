@@ -267,11 +267,14 @@ const siteUrl = 'https://nordicglobal.netlify.app';
         <div class="divider"></div>
         <p class="tagline">Help us build Ona, WorkFlowSpace, Affiliate Flow, BitNexus, Mimir, and AI Dev Suite.</p>
         <p class="cta">
+          <a href="https://cal.com/whynotproductions/join-the-team?duration=15&overlayCalendar=true" target="_blank" rel="noopener" class="cta-join">Join the Team</a>
+        </p>
+        <p class="cta">
           <a href="https://www.nordicglobalsolutions.com" target="_blank" rel="noopener">www.nordicglobalsolutions.com</a>
         </p>
         <p class="company">Build the future. Nordic Global Solutions.</p>
         <p class="part-of">
-          <a href="https://affliateflow.netlify.app/partners/svein-erik-nilsen" target="_blank" rel="noopener">Svein-Erik Nilsen</a> · <a href="https://affliateflow.netlify.app/partners/craig-martin" target="_blank" rel="noopener">Craig Martin</a> · Zerwiz — Co-founders · <a href="https://whynotproductions.netlify.app" target="_blank" rel="noopener">WhyNot Productions</a>
+          <a href="https://affliateflow.netlify.app/partners/svein-erik-nilsen" target="_blank" rel="noopener">Svein-Erik Nilsen</a> · <a href="https://affliateflow.netlify.app/partners/craig-martin" target="_blank" rel="noopener">Craig Martin</a> · <a href="https://whynotproductions.netlify.app" target="_blank" rel="noopener">Zerwiz</a> — Co-founders · <a href="https://whynotproductions.netlify.app" target="_blank" rel="noopener">WhyNot Productions</a>
         </p>
       </div>
     </div>
@@ -378,6 +381,25 @@ const siteUrl = 'https://nordicglobal.netlify.app';
   .slide ul li::before { content: ''; position: absolute; left: 0; top: 0.65em; width: 4px; height: 4px; background: linear-gradient(135deg, var(--accent), var(--gold)); border-radius: 50%; }
   .slide ul li strong { color: var(--gold-soft); font-weight: 500; }
   .slide .cta { font-size: 1.35rem; margin-top: 2.5rem; }
+  .slide .cta-join {
+    display: inline-block;
+    background: linear-gradient(135deg, rgba(212,175,55,0.2) 0%, rgba(0,229,255,0.15) 100%);
+    border: 1px solid var(--gold);
+    color: var(--gold);
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+    transition: all 0.2s;
+  }
+  .slide .cta-join:hover {
+    background: linear-gradient(135deg, rgba(212,175,55,0.3) 0%, rgba(0,229,255,0.25) 100%);
+    border-color: var(--gold-soft);
+    color: var(--gold-soft);
+    transform: translateY(-1px);
+  }
   .slide .cta a {
     color: var(--gold-soft);
     text-decoration: none;

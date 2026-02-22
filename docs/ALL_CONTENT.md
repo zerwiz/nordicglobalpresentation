@@ -11,6 +11,8 @@ Single source of truth for all text, URLs, and content used across the presentat
 | Website | https://www.nordicglobalsolutions.com |
 | Svein-Erik Nilsen (owner) | https://affliateflow.netlify.app/partners/svein-erik-nilsen |
 | Craig Martin (owner & developer) | https://affliateflow.netlify.app/partners/craig-martin |
+| Zerwiz / Lars-Josef Lindbom | https://whynotproductions.netlify.app |
+| Join the Team (Cal.com) | https://cal.com/whynotproductions/join-the-team?duration=15&overlayCalendar=true |
 | WhyNot Productions | https://whynotproductions.netlify.app |
 | Mimir (production) | https://mimir-drive.fly.dev |
 | Mimir (demo) | https://mimirdrive.netlify.app |
@@ -38,7 +40,8 @@ Single source of truth for all text, URLs, and content used across the presentat
 - **AI Dev Suite** — Local AI; Debugger
 
 ### CTAs
-- View Full Presentation → (links to slides.html)
+- Join the Team (links to Cal.com: https://cal.com/whynotproductions/join-the-team?duration=15&overlayCalendar=true)
+- View Full Presentation → (links to /slides)
 - www.nordicglobalsolutions.com
 
 ### Footer
@@ -62,6 +65,11 @@ Single source of truth for all text, URLs, and content used across the presentat
 - **Bio**: Principal DevSecOps Engineering Leader—empowering teams to achieve excellence in securing and optimizing software development lifecycles. Strategic, futuristic thinking meets hands-on expertise to drive transformative change.
 - **Pillars**: DevSecOps & Security (robust frameworks, secure SDLC) · Strategic Vision (long-term roadmaps, future-proofed solutions) · Empowering Teams (instilling confidence, unlocking potential)
 - **Experience**: GE Digital (secure cloud), Intel Media (streaming at scale), Verizon (OTA media), PerceptiLabs (AI modeling), Red Hat (secure AI platform).
+
+### Lars-Josef Lindbom (Zerwiz) — Developer & Owner
+
+- **Profile**: https://whynotproductions.netlify.app
+- **Bio**: Developer & Owner at Nordic Global Solutions. Builds Mimir, AI Dev Suite, and other platforms under WhyNot Productions.
 
 ---
 

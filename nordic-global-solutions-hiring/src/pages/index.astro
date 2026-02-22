@@ -176,13 +176,14 @@ const siteUrl = 'https://nordicglobal.netlify.app';
     </div>
 
     <div class="cta-group">
+      <a href="https://cal.com/whynotproductions/join-the-team?duration=15&overlayCalendar=true" target="_blank" rel="noopener" class="btn-join">Join the Team</a>
       <a href="/slides" class="btn-slides">View Full Presentation →</a>
       <a href="https://www.nordicglobalsolutions.com" target="_blank" rel="noopener" class="btn-website">www.nordicglobalsolutions.com</a>
     </div>
 
     <p class="company">Nordic Global Solutions</p>
     <p class="part-of">
-      <button type="button" data-modal="sveinerik" aria-label="Learn more about Svein-Erik Nilsen">Svein-Erik Nilsen</button> · <button type="button" data-modal="craig" aria-label="Learn more about Craig Martin">Craig Martin</button> · Zerwiz — Co-founders · <a href="https://whynotproductions.netlify.app" target="_blank" rel="noopener">WhyNot Productions</a>
+      <button type="button" data-modal="sveinerik" aria-label="Learn more about Svein-Erik Nilsen">Svein-Erik Nilsen</button> · <button type="button" data-modal="craig" aria-label="Learn more about Craig Martin">Craig Martin</button> · <button type="button" data-modal="zerwiz" aria-label="Learn more about Lars-Josef Lindbom">Zerwiz</button> — Co-founders · <a href="https://whynotproductions.netlify.app" target="_blank" rel="noopener">WhyNot Productions</a>
     </p>
   </main>
 
@@ -222,6 +223,19 @@ const siteUrl = 'https://nordicglobal.netlify.app';
         </ul>
         <p>Experience across GE Digital (secure cloud transformation), Intel Media (streaming at scale), Verizon (OTA media), PerceptiLabs (AI modeling), Red Hat (secure AI platform).</p>
         <p><a href="https://affliateflow.netlify.app/partners/craig-martin" target="_blank" rel="noopener">View full profile →</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-zerwiz" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-zerwiz-title">
+    <div class="modal">
+      <div class="modal-header">
+        <h2 id="modal-zerwiz-title">Lars-Josef Lindbom (Zerwiz) — Developer & Owner</h2>
+        <button type="button" class="modal-close" data-close aria-label="Close">×</button>
+      </div>
+      <div class="modal-body">
+        <p>Developer & Owner at Nordic Global Solutions. Builds Mimir, AI Dev Suite, and other platforms under WhyNot Productions.</p>
+        <p><a href="https://whynotproductions.netlify.app" target="_blank" rel="noopener">WhyNot Productions →</a></p>
       </div>
     </div>
   </div>
@@ -360,6 +374,30 @@ const siteUrl = 'https://nordicglobal.netlify.app';
     flex-direction: column;
     align-items: center;
     gap: 1.25rem;
+  }
+
+  .btn-join {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: linear-gradient(135deg, rgba(212,175,55,0.2) 0%, rgba(0,229,255,0.15) 100%);
+    border: 1px solid var(--gold);
+    color: var(--gold);
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 12px;
+    font-family: inherit;
+    letter-spacing: 0.03em;
+    transition: all 0.2s;
+    cursor: pointer;
+  }
+  .btn-join:hover {
+    background: linear-gradient(135deg, rgba(212,175,55,0.3) 0%, rgba(0,229,255,0.25) 100%);
+    border-color: var(--gold-soft);
+    color: var(--gold-soft);
+    transform: translateY(-1px);
   }
 
   .btn-slides {

@@ -334,8 +334,9 @@ Build the future. Nordic Global Solutions.
 
 ## Meta (Summary)
 
-- **Canonical**: https://www.nordicglobalsolutions.com
+- **Canonical**: https://nordicglobal.netlify.app
 - **Theme color**: #030306
-- **OG image**: /og-image.png (1200×630)
+- **OG image**: https://nordicglobal.netlify.app/og-image.png (1200×630, ~700KB)
+- **WhatsApp preview**: If preview doesn't update, use [Facebook Sharing Debugger](https://developers.facebook.com/tools/debug/) → enter URL → "Scrape Again" to refresh cache.
 
 See [METADATA.md](METADATA.md) for full meta tag reference.

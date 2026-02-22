@@ -110,7 +110,7 @@ Multi-tenant Knowledge & AI app: Drive, Mind Map, RAG-powered Chat, Mermaid sequ
 Drive (files, folders, sync to KB), Mind Map (knowledge graph, generate Mermaid), Chat (RAG, citations), Sequence Diagrams.
 
 **Deploy**  
-Web (mimir-drive.fly.dev), Electron desktop, or fully local. Ollama, LM Studio, Mimir backend. Zerwiz · WhyNot Productions.
+Web (mimir-drive.fly.dev), Electron desktop, or fully local. Ollama, LM Studio, Mimir backend. Lars-Josef Lindbom · WhyNot Productions.
 
 ---
 
@@ -126,7 +126,7 @@ Diagnose "(no response)", "terminated", "Cannot reach API". Status, logs, test c
 **Components**  
 Electron app (Chat, Drive, Memory, Tools), RAG (PDF, DOCX; hybrid BM25+vector), TUI, web, desktop. Works offline.
 
-Zerwiz · WhyNot Productions
+Lars-Josef Lindbom · WhyNot Productions
 
 ---
 

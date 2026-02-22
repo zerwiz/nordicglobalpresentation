@@ -67,6 +67,7 @@ const siteUrl = 'https://nordicglobal.netlify.app';
     })} />
   </Fragment>
 
+  <div class="index-bg-animate" aria-hidden="true"></div>
   <main class="landing">
     <h1>Build the <span class="highlight">Future</span> of Tech</h1>
     <div class="divider"></div>
@@ -164,7 +165,7 @@ const siteUrl = 'https://nordicglobal.netlify.app';
           <p><strong>Drive:</strong> File upload, folders, grid/list view, share, sync to Knowledge Base for AI.</p>
           <p><strong>Mind Map:</strong> Knowledge graph—documents, concepts, topics. Search, focus subgraph, generate Mermaid.</p>
           <p><strong>Chat:</strong> AI with RAG, source citations, streaming. Ollama, LM Studio, Mimir backend.</p>
-          <p>Web (mimir-drive.fly.dev), Electron desktop, or fully local. Zerwiz · WhyNot Productions.</p>
+          <p>Web (mimir-drive.fly.dev), Electron desktop, or fully local. Lars-Josef Lindbom · WhyNot Productions.</p>
         </div>
       </div>
     </div>
@@ -179,7 +180,7 @@ const siteUrl = 'https://nordicglobal.netlify.app';
           <p>100% local AI for developers. One-click install: Zed, OpenCode, Ollama, LM Studio. Chat with extended thinking (Qwen3, DeepSeek R1). Memory, document drive, RAG research.</p>
           <p><strong>Debugger & Observer:</strong> Diagnose "(no response)", "terminated", "Cannot reach API". Status, logs, test chat, LLM analysis. Terminal observer. A2A agent.</p>
           <p><strong>Components:</strong> Electron app (Chat, Drive, Memory, Tools), RAG (PDF, DOCX; hybrid BM25+vector), TUI, web, desktop. Works offline with Ollama.</p>
-          <p>Zerwiz · WhyNot Productions</p>
+          <p>Lars-Josef Lindbom · WhyNot Productions</p>
         </div>
       </div>
     </div>
@@ -197,17 +198,19 @@ const siteUrl = 'https://nordicglobal.netlify.app';
     </div>
 
     <div class="cta-group">
-      <a href="https://cal.com/whynotproductions/join-the-team?duration=15&overlayCalendar=true" target="_blank" rel="noopener" class="btn-join">Join the Team</a>
       <a href="/slides" class="btn-slides">View Full Presentation →</a>
       <a href="/join-us" class="btn-slides">Join Us →</a>
+      <span class="cta-label">Book a meeting</span>
+      <a href="https://cal.com/whynotproductions/join-the-team?duration=15&overlayCalendar=true" target="_blank" rel="noopener" class="btn-join">Join the Team</a>
       <a href="https://discord.com/invite/HtKyx8j4Cs" target="_blank" rel="noopener" class="btn-discord">Join Discord</a>
       <a href="https://www.nordicglobalsolutions.com" target="_blank" rel="noopener" class="btn-website">www.nordicglobalsolutions.com</a>
     </div>
 
     <p class="company">Nordic Global Solutions</p>
     <p class="part-of">
-      <button type="button" data-modal="sveinerik" aria-label="Learn more about Svein-Erik Nilsen">Svein-Erik Nilsen</button> · <button type="button" data-modal="craig" aria-label="Learn more about Craig Martin">Craig Martin</button> · <button type="button" data-modal="zerwiz" aria-label="Learn more about Lars-Josef Lindbom">Zerwiz</button> — Co-founders · <a href="https://whynotproductions.netlify.app" target="_blank" rel="noopener">WhyNot Productions</a>
+      <button type="button" data-modal="sveinerik" aria-label="Learn more about Svein-Erik Nilsen">Svein-Erik Nilsen</button> · <button type="button" data-modal="craig" aria-label="Learn more about Craig Martin">Craig Martin</button> · <button type="button" data-modal="zerwiz" aria-label="Learn more about Lars-Josef Lindbom">Lars-Josef Lindbom</button> — Co-founders
     </p>
+    <p class="part-of"><a href="https://whynotproductions.netlify.app" target="_blank" rel="noopener">WhyNot Productions</a></p>
   </main>
 
   <div id="modal-sveinerik" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-sveinerik-title">
@@ -253,7 +256,7 @@ const siteUrl = 'https://nordicglobal.netlify.app';
   <div id="modal-zerwiz" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-zerwiz-title">
     <div class="modal">
       <div class="modal-header">
-        <h2 id="modal-zerwiz-title">Lars-Josef Lindbom (Zerwiz) — Developer & Owner</h2>
+        <h2 id="modal-zerwiz-title">Lars-Josef Lindbom — Developer & Owner</h2>
         <button type="button" class="modal-close" data-close aria-label="Close">×</button>
       </div>
       <div class="modal-body">
@@ -297,6 +300,112 @@ const siteUrl = 'https://nordicglobal.netlify.app';
 </Base>
 
 <style>
+  .index-bg-animate {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    background:
+      radial-gradient(ellipse 100% 80% at 20% 20%, rgba(0,229,255,0.08) 0%, transparent 50%),
+      radial-gradient(ellipse 80% 60% at 80% 80%, rgba(212,175,55,0.06) 0%, transparent 50%),
+      radial-gradient(ellipse 60% 100% at 60% 50%, rgba(0,229,255,0.05) 0%, transparent 50%);
+    background-size: 140% 140%;
+    background-position: 0% 0%;
+    animation: bg-float 8s ease-in-out infinite;
+    opacity: 0.95;
+  }
+
+  @keyframes bg-float {
+    0%, 100% {
+      background-position: 0% 0%;
+      opacity: 0.95;
+    }
+    25% {
+      background-position: 40% 20%;
+      opacity: 1;
+    }
+    50% {
+      background-position: 20% 40%;
+      opacity: 0.95;
+    }
+    75% {
+      background-position: 30% 30%;
+      opacity: 1;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .index-bg-animate { animation: none; }
+  }
+
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(24px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .landing > *:not(.modal-overlay) {
+    opacity: 0;
+    animation: fadeInUp 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  }
+  .modal-overlay { animation: none !important; }
+  .landing > *:nth-child(1) { animation-delay: 0.05s; }
+  .landing > *:nth-child(2) { animation-delay: 0.1s; }
+  .landing > *:nth-child(3) { animation-delay: 0.15s; }
+  .landing > *:nth-child(4) { animation-delay: 0.2s; }
+  .landing > *:nth-child(5) { animation-delay: 0.25s; }
+  .landing > *:nth-child(6) { animation-delay: 0.3s; }
+  .landing > *:nth-child(7) { animation-delay: 0.35s; }
+  .landing > *:nth-child(8) { animation-delay: 0.4s; }
+  .landing > *:nth-child(9) { animation-delay: 0.45s; }
+  .landing > *:nth-child(10) { animation-delay: 0.5s; }
+  .landing > *:nth-child(11) { animation-delay: 0.55s; }
+  .landing > *:nth-child(12) { animation-delay: 0.6s; }
+  .landing > *:nth-child(13) { animation-delay: 0.65s; }
+  .landing > *:nth-child(14) { animation-delay: 0.7s; }
+  .landing > *:nth-child(15) { animation-delay: 0.75s; }
+  .landing > *:nth-child(16) { animation-delay: 0.8s; }
+  .landing > *:nth-child(17) { animation-delay: 0.85s; }
+  .landing > *:nth-child(18) { animation-delay: 0.9s; }
+
+  .landing .platforms button {
+    opacity: 0;
+    animation: fadeInUp 0.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  }
+  .landing .platforms button:nth-child(1) { animation-delay: 0.35s; }
+  .landing .platforms button:nth-child(2) { animation-delay: 0.4s; }
+  .landing .platforms button:nth-child(3) { animation-delay: 0.45s; }
+  .landing .platforms button:nth-child(4) { animation-delay: 0.5s; }
+  .landing .platforms button:nth-child(5) { animation-delay: 0.55s; }
+  .landing .platforms button:nth-child(6) { animation-delay: 0.6s; }
+
+  .landing .meeting-card {
+    opacity: 0;
+    animation: fadeInUp 0.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  }
+  .landing .meeting-card:nth-child(1) { animation-delay: 0.7s; }
+  .landing .meeting-card:nth-child(2) { animation-delay: 0.78s; }
+
+  .landing .cta-group > * {
+    opacity: 0;
+    animation: fadeInUp 0.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  }
+  .landing .cta-group > *:nth-child(1) { animation-delay: 0.82s; }
+  .landing .cta-group > *:nth-child(2) { animation-delay: 0.88s; }
+  .landing .cta-group > *:nth-child(3) { animation-delay: 0.94s; }
+  .landing .cta-group > *:nth-child(4) { animation-delay: 1s; }
+  .landing .cta-group > *:nth-child(5) { animation-delay: 1.06s; }
+  .landing .cta-group > *:nth-child(6) { animation-delay: 1.12s; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .landing > *,
+    .landing .platforms button,
+    .landing .meeting-card,
+    .landing .cta-group > * {
+      animation: none !important;
+      opacity: 1 !important;
+    }
+  }
+
   .landing {
     position: relative;
     z-index: 1;
@@ -321,10 +430,34 @@ const siteUrl = 'https://nordicglobal.netlify.app';
     background-clip: text;
   }
   .landing h1 .highlight {
-    background: linear-gradient(135deg, var(--accent) 0%, var(--gold) 100%);
+    background: linear-gradient(90deg, var(--accent), var(--gold), var(--accent));
+    background-size: 200% 100%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    animation: highlight-shift 3s ease-in-out infinite;
+  }
+
+  @keyframes highlight-shift {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+  }
+
+  @keyframes cta-gradient {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+  }
+
+  @keyframes cta-label-pulse {
+    0%, 100% { color: var(--text-dim); }
+    50% { color: var(--accent); }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .landing h1 .highlight,
+    .btn-join,
+    .btn-slides,
+    .cta-label { animation: none !important; }
   }
 
   .divider {
@@ -447,11 +580,21 @@ const siteUrl = 'https://nordicglobal.netlify.app';
     gap: 1.25rem;
   }
 
+  .cta-label {
+    font-size: 0.8rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    margin-top: 0.25rem;
+    animation: cta-label-pulse 2s ease-in-out infinite;
+  }
+
   .btn-join {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    background: linear-gradient(135deg, rgba(212,175,55,0.2) 0%, rgba(0,229,255,0.15) 100%);
+    background: linear-gradient(90deg, rgba(212,175,55,0.2), rgba(0,229,255,0.2), rgba(212,175,55,0.2));
+    background-size: 200% 100%;
     border: 1px solid var(--gold);
     color: var(--gold);
     padding: 1rem 2rem;
@@ -461,11 +604,11 @@ const siteUrl = 'https://nordicglobal.netlify.app';
     border-radius: 12px;
     font-family: inherit;
     letter-spacing: 0.03em;
-    transition: all 0.2s;
+    transition: border-color 0.2s, color 0.2s, transform 0.2s;
     cursor: pointer;
+    animation: cta-gradient 2.5s ease-in-out infinite;
   }
   .btn-join:hover {
-    background: linear-gradient(135deg, rgba(212,175,55,0.3) 0%, rgba(0,229,255,0.25) 100%);
     border-color: var(--gold-soft);
     color: var(--gold-soft);
     transform: translateY(-1px);
@@ -475,7 +618,8 @@ const siteUrl = 'https://nordicglobal.netlify.app';
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    background: linear-gradient(135deg, rgba(0,229,255,0.15) 0%, rgba(212,175,55,0.15) 100%);
+    background: linear-gradient(90deg, rgba(0,229,255,0.15), rgba(212,175,55,0.2), rgba(0,229,255,0.15));
+    background-size: 200% 100%;
     border: 1px solid var(--border-glow);
     color: var(--gold-soft);
     padding: 1rem 2rem;
@@ -485,11 +629,11 @@ const siteUrl = 'https://nordicglobal.netlify.app';
     border-radius: 12px;
     font-family: inherit;
     letter-spacing: 0.03em;
-    transition: all 0.2s;
+    transition: border-color 0.2s, color 0.2s, transform 0.2s;
     cursor: pointer;
+    animation: cta-gradient 2.5s ease-in-out infinite 0.5s;
   }
   .btn-slides:hover {
-    background: linear-gradient(135deg, rgba(0,229,255,0.25) 0%, rgba(212,175,55,0.25) 100%);
     border-color: var(--gold);
     color: var(--gold);
     transform: translateY(-1px);

@@ -145,6 +145,12 @@ Not just a brand—a lifestyle. Films, events, gear. Based in Umeå. [ruffriders
 
 ---
 
+## Mimir
+
+Knowledge & AI app: Drive, Mind Map, RAG Chat, Mermaid diagrams. Web (mimir-drive.fly.dev), Electron desktop, or fully local. [github.com/zerwiz/Mimir](https://github.com/zerwiz/Mimir)
+
+---
+
 ## Connection to Nordic Global
 
 Zerwiz is one of the developers and owners of Nordic Global Solutions. WhyNot Productions operates under the Nordic Global umbrella. This presentation and related materials are built by Zerwiz.

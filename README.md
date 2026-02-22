@@ -2,7 +2,7 @@
 
 > Hiring presentation and landing page for [Nordic Global Solutions](https://www.nordicglobalsolutions.com)—seeking builders for the future of tech.
 
-Static, mobile-friendly presentation showcasing **Ona**, **WorkFlowSpace**, **Affiliate Flow**, and **BitNexus**.
+Static, mobile-friendly presentation showcasing **Ona**, **WorkFlowSpace**, **Affiliate Flow**, **BitNexus**, and **Mimir**.
 
 ---
 
@@ -35,7 +35,7 @@ Config is in [netlify.toml](netlify.toml).
 | Page | Purpose |
 |------|---------|
 | **Landing** (`index.html`) | Hero, platform overview, CTA to view presentation |
-| **Slides** (`slides.html`) | 9-slide deck: platforms, Ona, WorkFlowSpace, Affiliate Flow, BitNexus, stack, CTA |
+| **Slides** (`slides.html`) | 11-slide deck: platforms, Ona, WorkFlowSpace, Affiliate Flow, BitNexus, Mimir, AI Dev Suite, stack, CTA |
 | **404** | Custom error page with links back |
 
 **Interaction**
@@ -54,6 +54,8 @@ Config is in [netlify.toml](netlify.toml).
 | **WorkFlowSpace** | Unified workspace. Google integration, split-view editor. |
 | **Affiliate Flow** | Marketing automation. Landing pages, AI social, email/SMS. |
 | **BitNexus** | Decentralized affiliate revenue. MEV bots, NXC token, MLM network. |
+| **Mimir** | Knowledge & AI. Drive, Mind Map, RAG Chat, Mermaid diagrams. |
+| **AI Dev Suite** | Local AI tooling. Debugger & Observer. Zed, Ollama, RAG. |
 
 ---
 
@@ -96,8 +98,11 @@ Config is in [netlify.toml](netlify.toml).
 | [WORKFLOWSPACE](docs/WORKFLOWSPACE.md) | WorkFlowSpace details |
 | [AFFILIATE_FLOW](docs/AFFILIATE_FLOW.md) | Affiliate Flow details |
 | [BITNEXUS_PRODUCT](docs/BITNEXUS_PRODUCT.md) | BitNexus product overview |
+| [MIMIR](docs/MIMIR.md) | Mimir — quick overview |
+| [MIMIR_CAPABILITIES](docs/MIMIR_CAPABILITIES.md) | Mimir — full product capabilities |
 | [WHYNOT_PRODUCTIONS](docs/WHYNOT_PRODUCTIONS.md) | WhyNot Productions — Zerwiz, AI Dev Suite, courses |
 | [TECH_STACK](docs/TECH_STACK.md) | Technology stack |
+| [ALL_CONTENT](docs/ALL_CONTENT.md) | Master reference — all text, slides, modals, URLs |
 | [INDEX](docs/INDEX.md) | Doc index |
 
 ---

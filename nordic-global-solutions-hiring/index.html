@@ -3,7 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Nordic Global Solutions — Build the Future of Tech</title>
+  <meta name="description" content="We're seeking people to build the future of technology. Nordic Global Solutions develops Ona, WorkFlowSpace, Affiliate Flow, BitNexus, Mimir, and AI Dev Suite.">
+  <meta name="keywords" content="Nordic Global Solutions, Ona, WorkFlowSpace, Affiliate Flow, BitNexus, Mimir, AI Dev Suite, Debugger, AI operating system, hiring, tech jobs, AI agents, Solin, decentralized affiliate, knowledge graph, RAG">
+  <meta name="author" content="Nordic Global Solutions">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#030306">
+  <meta name="application-name" content="Nordic Global Solutions">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="NGS">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="msapplication-TileColor" content="#030306">
+  <link rel="canonical" href="https://www.nordicglobalsolutions.com/">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="apple-touch-icon" href="icon.svg">
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Nordic Global Solutions — Build the Future of Tech">
+  <meta property="og:description" content="We're seeking people to build the future of technology. Nordic Global Solutions develops Ona, WorkFlowSpace, Affiliate Flow, BitNexus, Mimir, and AI Dev Suite.">
+  <meta property="og:image" content="/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Nordic Global Solutions — Build the Future of Tech">
+  <meta property="og:url" content="https://www.nordicglobalsolutions.com/">
+  <meta property="og:site_name" content="Nordic Global Solutions">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="en_GB">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Nordic Global Solutions — Build the Future of Tech">
+  <meta name="twitter:description" content="We're seeking people to build the future of technology. Ona, WorkFlowSpace, Affiliate Flow, BitNexus, Mimir, AI Dev Suite.">
+  <meta name="twitter:image" content="/og-image.png">
+  <meta name="twitter:image:alt" content="Nordic Global Solutions — Build the Future of Tech">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -102,18 +137,27 @@
     .landing .intro {
       font-size: 1.1rem;
       color: var(--text-muted);
-      margin: 0 0 2.5rem;
+      margin: 0 0 1.5rem;
       max-width: 32rem;
       margin-left: auto;
       margin-right: auto;
       line-height: 1.7;
     }
 
+    .products-label {
+      font-size: 0.85rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin: 0 0 1rem;
+      font-weight: 500;
+    }
+
     .platforms {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.75rem;
+      display: grid;
+      grid-template-columns: repeat(3, auto);
       justify-content: center;
+      gap: 0.75rem;
       margin-bottom: 2.5rem;
     }
     .platforms span,
@@ -210,7 +254,7 @@
       .landing h1 { font-size: clamp(1.75rem, 8vw, 2.5rem); }
       .landing .tagline { font-size: 1.1rem; }
       .landing .intro { font-size: 1rem; }
-      .platforms { gap: 0.5rem; margin-bottom: 2rem; }
+      .platforms { grid-template-columns: repeat(2, auto); gap: 0.5rem; margin-bottom: 2rem; }
       .platforms span { font-size: 0.8rem; padding: 0.5rem 0.75rem; }
       .btn-slides { padding: 0.875rem 1.5rem; font-size: 1rem; min-height: 44px; min-width: 44px; }
       .btn-website { font-size: 0.95rem; padding: 0.5rem 0; }
@@ -293,11 +337,14 @@
     <p class="tagline">We're looking for people who want to shape what comes next.</p>
     <p class="intro">Nordic Global Solutions develops platforms that help people and teams work smarter—AI that assists you, workspaces that unite teams, and automation that scales your reach.</p>
 
+    <p class="products-label">Our Products</p>
     <div class="platforms">
       <button type="button" data-modal="ona" aria-label="Learn more about Ona"><strong>Ona</strong> — AI operating system</button>
       <button type="button" data-modal="workflowspace" aria-label="Learn more about WorkFlowSpace"><strong>WorkFlowSpace</strong> — Unified workspace</button>
       <button type="button" data-modal="affiliateflow" aria-label="Learn more about Affiliate Flow"><strong>Affiliate Flow</strong> — Marketing automation</button>
       <button type="button" data-modal="bitnexus" aria-label="Learn more about BitNexus"><strong>BitNexus</strong> — Decentralized affiliate revenue</button>
+      <button type="button" data-modal="mimir" aria-label="Learn more about Mimir"><strong>Mimir</strong> — Knowledge & AI</button>
+      <button type="button" data-modal="aidevsuite" aria-label="Learn more about AI Dev Suite"><strong>AI Dev Suite</strong> — Local AI; Debugger</button>
     </div>
 
     <div id="modal-ona" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-ona-title">
@@ -356,6 +403,37 @@
       </div>
     </div>
 
+    <div id="modal-mimir" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-mimir-title">
+      <div class="modal">
+        <div class="modal-header">
+          <h2 id="modal-mimir-title">Mimir — Knowledge & AI</h2>
+          <button type="button" class="modal-close" data-close aria-label="Close">×</button>
+        </div>
+        <div class="modal-body">
+          <p>Multi-tenant Knowledge & AI app: Drive, Mind Map, RAG-powered Chat, Mermaid sequence diagrams.</p>
+          <p><strong>Drive:</strong> File upload, folders, grid/list view, share, sync to Knowledge Base for AI.</p>
+          <p><strong>Mind Map:</strong> Knowledge graph—documents, concepts, topics. Search, focus subgraph, generate Mermaid.</p>
+          <p><strong>Chat:</strong> AI with RAG, source citations, streaming. Ollama, LM Studio, Mimir backend.</p>
+          <p>Web (mimir-drive.fly.dev), Electron desktop, or fully local. Zerwiz · WhyNot Productions.</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal-aidevsuite" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-aidevsuite-title">
+      <div class="modal">
+        <div class="modal-header">
+          <h2 id="modal-aidevsuite-title">AI Dev Suite — Local AI Tooling</h2>
+          <button type="button" class="modal-close" data-close aria-label="Close">×</button>
+        </div>
+        <div class="modal-body">
+          <p>100% local AI for developers. One-click install: Zed, OpenCode, Ollama, LM Studio. Chat with extended thinking (Qwen3, DeepSeek R1). Memory, document drive, RAG research.</p>
+          <p><strong>Debugger & Observer:</strong> Diagnose "(no response)", "terminated", "Cannot reach API". Status, logs, test chat, LLM analysis. Terminal observer. A2A agent.</p>
+          <p><strong>Components:</strong> Electron app (Chat, Drive, Memory, Tools), RAG (PDF, DOCX; hybrid BM25+vector), TUI, web, desktop. Works offline with Ollama.</p>
+          <p>Zerwiz · WhyNot Productions</p>
+        </div>
+      </div>
+    </div>
+
     <div class="cta-group">
       <a href="slides.html" class="btn-slides">View Full Presentation →</a>
       <a href="https://www.nordicglobalsolutions.com" target="_blank" rel="noopener" class="btn-website">www.nordicglobalsolutions.com</a>
@@ -365,6 +443,65 @@
     <p class="part-of">Zerwiz — Developer & Owner · <a href="https://whynotproductions.netlify.app" target="_blank" rel="noopener">WhyNot Productions</a></p>
   </main>
 
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://www.nordicglobalsolutions.com/#org",
+        "name": "Nordic Global Solutions",
+        "url": "https://www.nordicglobalsolutions.com",
+        "description": "We develop cutting-edge AI, complex system architectures, and custom software. Innovation with a Human Pulse.",
+        "sameAs": ["https://www.nordicglobalsolutions.com", "https://whynotproductions.netlify.app"],
+        "logo": "https://www.nordicglobalsolutions.com/icon.svg"
+      },
+      {
+        "@type": "WebPage",
+        "name": "Nordic Global Solutions — Build the Future of Tech",
+        "description": "We're seeking people to build the future of technology. Ona, WorkFlowSpace, Affiliate Flow, BitNexus, Mimir.",
+        "url": "https://www.nordicglobalsolutions.com/",
+        "publisher": { "@id": "https://www.nordicglobalsolutions.com/#org" }
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "Ona",
+        "applicationCategory": "AI Operating System",
+        "description": "Your AI teammate. Solin leads a squad of specialist agents. Content, research, code, design."
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "WorkFlowSpace",
+        "applicationCategory": "Productivity",
+        "description": "Unified workspace for teams. Calendar, chat, tasks, docs. Google integration."
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "Affiliate Flow",
+        "applicationCategory": "Marketing",
+        "description": "Marketing automation. Landing pages, AI social content, email/SMS outreach."
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "BitNexus",
+        "applicationCategory": "Finance",
+        "description": "Decentralized affiliate revenue platform. AI-powered, MEV/XAB staking, NXC token."
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "Mimir",
+        "applicationCategory": "Productivity",
+        "description": "Knowledge & AI: Drive, Mind Map, RAG Chat, Mermaid diagrams. Web, Electron, local."
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "AI Dev Suite",
+        "applicationCategory": "DeveloperApplication",
+        "description": "100% local AI tooling. Debugger & Observer for API diagnostics. Zed, OpenCode, Ollama, LM Studio. Memory, RAG, TUI, web, desktop."
+      }
+    ]
+  }
+  </script>
   <script>
     document.querySelectorAll('[data-modal]').forEach(btn => {
       btn.addEventListener('click', () => {

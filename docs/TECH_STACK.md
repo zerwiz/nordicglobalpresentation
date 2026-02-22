@@ -30,6 +30,14 @@
 - Supabase (PostgreSQL)
 - Optional Elixir/Phoenix backend
 
+### Mimir
+
+- React 18, Vite 5, Tailwind CSS 3
+- Cytoscape (Mind Map), Mermaid, Lucide React
+- Electron (desktop)
+- SurrealDB (backend)
+- Fly.io, Netlify
+
 ### Affiliate Flow
 
 - Vite, React, Tailwind CSS

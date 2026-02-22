@@ -24,6 +24,8 @@ We focus on tools that make a real difference—AI that helps you work, workspac
 - **WorkFlowSpace** — One place for teams
 - **Affiliate Flow** — Marketing automation
 - **BitNexus** — Decentralized affiliate revenue platform
+- **Mimir** — Knowledge & AI
+- **AI Dev Suite** — Local AI tooling; Debugger & Observer
 
 ---
 
@@ -92,7 +94,37 @@ Genesis phase: 500 licenses. Launch January 21, 2026. $227B+ market opportunity.
 
 ---
 
-## Slide 8: Our Stack
+## Slide 8: Mimir
+
+# Mimir: Knowledge & AI
+
+Multi-tenant Knowledge & AI app: Drive, Mind Map, RAG-powered Chat, Mermaid sequence diagrams.
+
+**Modules**  
+Drive (files, folders, sync to KB), Mind Map (knowledge graph, generate Mermaid), Chat (RAG, citations), Sequence Diagrams.
+
+**Deploy**  
+Web (mimir-drive.fly.dev), Electron desktop, or fully local. Ollama, LM Studio, Mimir backend. Zerwiz · WhyNot Productions.
+
+---
+
+## Slide 9: AI Dev Suite
+
+# Local AI Tooling & Debugger
+
+100% local AI for developers. One-click install: Zed, OpenCode, Ollama, LM Studio. Chat with extended thinking (Qwen3, DeepSeek R1). Memory, document drive, RAG research.
+
+**Debugger & Observer**  
+Diagnose "(no response)", "terminated", "Cannot reach API". Status, logs, test chat, LLM analysis. Terminal observer. A2A agent.
+
+**Components**  
+Electron app (Chat, Drive, Memory, Tools), RAG (PDF, DOCX; hybrid BM25+vector), TUI, web, desktop. Works offline.
+
+Zerwiz · WhyNot Productions
+
+---
+
+## Slide 10: Our Stack
 
 # How We Build
 
@@ -102,11 +134,11 @@ We use OpenAI and Claude, and support self-hosted models like Ollama.
 
 ---
 
-## Slide 9: Call to Action
+## Slide 11: Call to Action
 
 # Join the Team
 
-Help us build Ona, WorkFlowSpace, Affiliate Flow, and BitNexus.
+Help us build Ona, WorkFlowSpace, Affiliate Flow, BitNexus, Mimir, and AI Dev Suite.
 
 **www.nordicglobalsolutions.com**
 

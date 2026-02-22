@@ -62,11 +62,13 @@ All in one place. Secure. You can self-host or use the cloud.
 
 # WorkFlowSpace: One Workspace for Teams
 
-A single place for calendar, chat, tasks, and docs. Works with Google—Gmail, Drive, Calendar, Meet.
+A single place for calendar, chat, tasks, and docs. Google Workspace integration—Gmail, Drive, Calendar, Meet, Docs/Sheets, Tasks.
 
-- Unified dashboard—no switching between tools
-- Split-view editor: chat and code side by side
-- Deep work mode and accessibility built in
+**Editor & AI**  
+Split-view: chat + code side by side. AI multi-model routing (GPT-4, Claude, Gemini, Ollama). Strategy Agent. Preview, export (PNG, PDF).
+
+**Tasks & Knowledge**  
+Kanban boards, drag-and-drop, custom workflows. Knowledge base with semantic search, mind maps. Deep Work Mode, Restoration Room. WCAG 2.1 AA compliant.
 
 ---
 
@@ -74,9 +76,13 @@ A single place for calendar, chat, tasks, and docs. Works with Google—Gmail, D
 
 # Affiliate Flow: Marketing Automation
 
-Deploy landing pages, create social content with AI, manage email and SMS outreach.
+Full-stack affiliate marketing: landing pages, communications, and AI-generated social content. One platform for your entire funnel.
 
-One platform for your marketing funnel.
+**Landing & Comms**  
+Landing pages (Astro, static HTML, Netlify deploy). Email, SMS, WhatsApp with AI-generated messages. Contact groups, tone options. Gmail, Outlook, custom SMTP.
+
+**AI Social & Dashboard**  
+LinkedIn, X, Instagram, TikTok, YouTube. Platform-specific prompts. Schedule or push now. Calendar, contacts, products, affiliates.
 
 ---
 
@@ -87,10 +93,10 @@ One platform for your marketing funnel.
 AI-powered platform combining automated trading, network marketing, and content generation. Passive income through MEV & XAB bots, affiliate commissions, and NXC token.
 
 **Key Features**  
-MEV Bot & XAB Bot staking (10–18% APY), Alliance Network (MLM), AI Content Generator, ISO 27001 & 27701 Certified.
+Social networking (chat, friends). Alliance Network (MLM, tier progression). Marketplace with due diligence for products (S–F ranking, CertiK, OpenZeppelin, KPMG audits). Trust: ISO 27001 & 27701 certified. MEV Bot & XAB Bot staking (10–18% APY). AI Content Generator.
 
 **Launch**  
-Genesis phase: 500 licenses. Launch January 21, 2026. $227B+ market opportunity.
+Genesis phase: 500 licenses. Launch January 21, 2026. NXC token. $227B+ market opportunity.
 
 ---
 
@@ -128,7 +134,7 @@ Zerwiz · WhyNot Productions
 
 # How We Build
 
-React, TypeScript, Elixir, Phoenix.
+React, TypeScript, Rust, Elixir, Phoenix. Cursor, Google AI Suite.
 
 We use OpenAI and Claude, and support self-hosted models like Ollama.
 

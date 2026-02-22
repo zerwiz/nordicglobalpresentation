@@ -1,2 +1,0 @@
-# Pretty URL: /slides serves slides.html (rewrite, keeps URL)
-/slides  /slides.html  200

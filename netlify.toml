@@ -2,8 +2,8 @@
 # https://docs.netlify.com/configure-builds/file-based-configuration/
 
 [build]
-  publish = "nordic-global-solutions-hiring"
-  command = "echo 'Static site — no build required'"
+  publish = "nordic-global-solutions-hiring/dist"
+  command = "cd nordic-global-solutions-hiring && npm install && npm run build"
 
 # Security and cache headers
 [[headers]]

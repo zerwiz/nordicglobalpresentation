@@ -8,11 +8,11 @@
 | **Styling** | Tailwind CSS |
 | **Backend** | Elixir, Phoenix, Node.js, Python |
 | **AI / ML** | OpenAI API, TensorFlow, PyTorch, Hugging Face, Scikit-learn |
-| **LLM** | OpenAI, Claude, Gemini, Groq |
+| **LLM** | OpenAI, Claude, Gemini, Groq, Google AI Suite |
 | **Self-hosted AI** | Ollama, LM Studio, vLLM |
 | **Infrastructure** | AWS, Google Cloud, Docker, Kubernetes |
 | **Data** | PostgreSQL, GraphQL |
-| **Other** | Rust (systems), API integration |
+| **Other** | Rust (systems), Cursor (AI-powered IDE), Google AI Suite, API integration |
 
 ## Per Platform
 

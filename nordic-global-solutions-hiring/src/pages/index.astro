@@ -1,0 +1,513 @@
+---
+import Base from '../layouts/Base.astro';
+const siteUrl = 'https://nordicglobal.netlify.app';
+---
+
+<Base>
+  <Fragment slot="head">
+    <title>Nordic Global Solutions — Build the Future of Tech</title>
+    <meta name="description" content="We're seeking people to build the future of technology. Nordic Global Solutions develops Ona, WorkFlowSpace, Affiliate Flow, BitNexus, Mimir, and AI Dev Suite." />
+    <meta name="keywords" content="Nordic Global Solutions, Ona, WorkFlowSpace, Affiliate Flow, BitNexus, Mimir, AI Dev Suite, Debugger, AI operating system, hiring, tech jobs, AI agents, Solin, decentralized affiliate, knowledge graph, RAG" />
+    <meta name="author" content="Nordic Global Solutions" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#030306" />
+    <meta name="application-name" content="Nordic Global Solutions" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="NGS" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="msapplication-TileColor" content="#030306" />
+    <link rel="canonical" href={`${siteUrl}/`} />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Nordic Global Solutions — Build the Future of Tech" />
+    <meta property="og:description" content="We're seeking people to build the future of technology. Nordic Global Solutions develops Ona, WorkFlowSpace, Affiliate Flow, BitNexus, Mimir, and AI Dev Suite." />
+    <meta property="og:image" content={`${siteUrl}/og-image.png`} />
+    <meta property="og:image:secure_url" content={`${siteUrl}/og-image.png`} />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Nordic Global Solutions — Build the Future of Tech" />
+    <meta property="og:url" content={`${siteUrl}/`} />
+    <meta property="og:site_name" content="Nordic Global Solutions" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="en_GB" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Nordic Global Solutions — Build the Future of Tech" />
+    <meta name="twitter:description" content="We're seeking people to build the future of technology. Ona, WorkFlowSpace, Affiliate Flow, BitNexus, Mimir, AI Dev Suite." />
+    <meta name="twitter:image" content={`${siteUrl}/og-image.png`} />
+    <meta name="twitter:image:alt" content="Nordic Global Solutions — Build the Future of Tech" />
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://www.nordicglobalsolutions.com/#org",
+          "name": "Nordic Global Solutions",
+          "url": "https://www.nordicglobalsolutions.com",
+          "description": "We develop cutting-edge AI, complex system architectures, and custom software. Innovation with a Human Pulse.",
+          "sameAs": ["https://www.nordicglobalsolutions.com", "https://whynotproductions.netlify.app"],
+          "logo": "https://www.nordicglobalsolutions.com/icon.svg"
+        },
+        {
+          "@type": "WebPage",
+          "name": "Nordic Global Solutions — Build the Future of Tech",
+          "description": "We're seeking people to build the future of technology. Ona, WorkFlowSpace, Affiliate Flow, BitNexus, Mimir.",
+          "url": "https://www.nordicglobalsolutions.com/",
+          "publisher": { "@id": "https://www.nordicglobalsolutions.com/#org" }
+        },
+        { "@type": "SoftwareApplication", "name": "Ona", "applicationCategory": "AI Operating System", "description": "Your AI teammate. Solin leads a squad of specialist agents. Content, research, code, design." },
+        { "@type": "SoftwareApplication", "name": "WorkFlowSpace", "applicationCategory": "Productivity", "description": "Unified workspace. Google (Gmail, Drive, Calendar, Meet, Docs). Split-view editor, AI multi-model routing, Kanban, knowledge base. WCAG 2.1 AA." },
+        { "@type": "SoftwareApplication", "name": "Affiliate Flow", "applicationCategory": "Marketing", "description": "Marketing automation. Landing pages (Astro, Netlify), AI social (LinkedIn, X, Instagram, TikTok, YouTube), email/SMS/WhatsApp with AI-generated messages." },
+        { "@type": "SoftwareApplication", "name": "BitNexus", "applicationCategory": "Finance", "description": "Decentralized affiliate revenue. Social networking, Alliance Network, Marketplace with due diligence, MEV/XAB staking (10–18% APY), AI Content Generator. ISO 27001 & 27701 certified." },
+        { "@type": "SoftwareApplication", "name": "Mimir", "applicationCategory": "Productivity", "description": "Knowledge & AI: Drive, Mind Map, RAG Chat, Mermaid diagrams. Web, Electron, local." },
+        { "@type": "SoftwareApplication", "name": "AI Dev Suite", "applicationCategory": "DeveloperApplication", "description": "100% local AI tooling. Debugger & Observer for API diagnostics. Zed, OpenCode, Ollama, LM Studio. Memory, RAG, TUI, web, desktop." }
+      ]
+    })} />
+  </Fragment>
+
+  <main class="landing">
+    <h1>Build the <span class="highlight">Future</span> of Tech</h1>
+    <div class="divider"></div>
+    <p class="tagline">We're looking for people who want to shape what comes next.</p>
+    <p class="intro">Nordic Global Solutions develops platforms that help people and teams work smarter—AI that assists you, workspaces that unite teams, and automation that scales your reach.</p>
+
+    <p class="products-label">Our Products</p>
+    <div class="platforms">
+      <button type="button" data-modal="ona" aria-label="Learn more about Ona"><strong>Ona</strong> — AI operating system</button>
+      <button type="button" data-modal="workflowspace" aria-label="Learn more about WorkFlowSpace"><strong>WorkFlowSpace</strong> — Unified workspace</button>
+      <button type="button" data-modal="affiliateflow" aria-label="Learn more about Affiliate Flow"><strong>Affiliate Flow</strong> — Marketing automation</button>
+      <button type="button" data-modal="bitnexus" aria-label="Learn more about BitNexus"><strong>BitNexus</strong> — Decentralized affiliate revenue</button>
+      <button type="button" data-modal="mimir" aria-label="Learn more about Mimir"><strong>Mimir</strong> — Knowledge & AI</button>
+      <button type="button" data-modal="aidevsuite" aria-label="Learn more about AI Dev Suite"><strong>AI Dev Suite</strong> — Local AI; Debugger</button>
+    </div>
+
+    <div id="modal-ona" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-ona-title">
+      <div class="modal">
+        <div class="modal-header">
+          <h2 id="modal-ona-title">Ona — AI Operating System</h2>
+          <button type="button" class="modal-close" data-close aria-label="Close">×</button>
+        </div>
+        <div class="modal-body">
+          <p>Your AI teammate. Solin leads a squad of specialist agents—writers, researchers, developers, marketers—in one thread.</p>
+          <p><strong>Channels:</strong> Web, Telegram, Discord, WhatsApp, Signal. Text or voice.</p>
+          <p><strong>What you can do:</strong> Content (blogs, social, emails), research, code, design, projects. Integrates with Google, Notion. Secure. Self-host or cloud.</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal-workflowspace" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-workflowspace-title">
+      <div class="modal">
+        <div class="modal-header">
+          <h2 id="modal-workflowspace-title">WorkFlowSpace — Unified Workspace</h2>
+          <button type="button" class="modal-close" data-close aria-label="Close">×</button>
+        </div>
+        <div class="modal-body">
+          <p>One place for calendar, chat, tasks, and docs. All-in-one workspace with Google Workspace integration.</p>
+          <p><strong>Google:</strong> Gmail, Drive, Calendar, Meet, Docs/Sheets, Tasks, Contacts. Bidirectional sync.</p>
+          <p><strong>Editor:</strong> Split-view—chat on left, code/editor on right. AI response insertion. Document and Code mode. Preview, export (PNG, PDF). Multi-model (GPT-4, Claude, Gemini, Ollama).</p>
+          <p><strong>Tasks & Knowledge:</strong> Kanban boards, drag-and-drop, custom workflows. Knowledge base with semantic search, mind maps. AI-powered queries with source citations.</p>
+          <p><strong>AI & Accessibility:</strong> Strategy Agent, intelligent model routing. Deep Work Mode, Restoration Room. WCAG 2.1 AA compliant.</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal-affiliateflow" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-affiliateflow-title">
+      <div class="modal">
+        <div class="modal-header">
+          <h2 id="modal-affiliateflow-title">Affiliate Flow — Marketing Automation</h2>
+          <button type="button" class="modal-close" data-close aria-label="Close">×</button>
+        </div>
+        <div class="modal-body">
+          <p>Full-stack affiliate marketing: landing pages, communications, and AI-generated social content. One platform for your entire marketing funnel.</p>
+          <p><strong>Landing Pages:</strong> Deploy and manage pages (Astro, static HTML). Optional Netlify deploy hook, auto-deploy.</p>
+          <p><strong>Communications:</strong> Email, SMS, WhatsApp with AI-generated messages. Promotional, follow-up, reminder. Contact groups, tone options. Gmail, Outlook, custom SMTP.</p>
+          <p><strong>AI Social:</strong> Multi-platform—LinkedIn, X, Facebook, Instagram, TikTok, YouTube. Platform-specific prompts. Push now or schedule. Posts appear in Calendar.</p>
+          <p><strong>Dashboard:</strong> Overview (clicks, engagement, KPIs), Calendar, Landings, Comms, AI Social, Contacts, Products, Affiliates, Settings. Phoenix/Elixir backend.</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal-bitnexus" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-bitnexus-title">
+      <div class="modal">
+        <div class="modal-header">
+          <h2 id="modal-bitnexus-title">BitNexus — Decentralized Affiliate Revenue</h2>
+          <button type="button" class="modal-close" data-close aria-label="Close">×</button>
+        </div>
+        <div class="modal-body">
+          <p>AI-powered platform combining automated trading, network marketing, and content generation. Decentralized affiliate revenue with passive income streams.</p>
+          <p><strong>Key Features:</strong> Social networking (chat, friends). Alliance Network (MLM, tier progression). Marketplace with due diligence for products (S–F ranking, CertiK, OpenZeppelin, KPMG audits). Trust: ISO 27001 & 27701 certified.</p>
+          <p><strong>Income:</strong> MEV Bot & XAB Bot staking (10–18% APY), affiliate commissions, AI Content Generator. NXC token.</p>
+          <p>Launch January 21, 2026. Genesis phase: 500 licenses. $227B+ market opportunity.</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal-mimir" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-mimir-title">
+      <div class="modal">
+        <div class="modal-header">
+          <h2 id="modal-mimir-title">Mimir — Knowledge & AI</h2>
+          <button type="button" class="modal-close" data-close aria-label="Close">×</button>
+        </div>
+        <div class="modal-body">
+          <p>Multi-tenant Knowledge & AI app: Drive, Mind Map, RAG-powered Chat, Mermaid sequence diagrams.</p>
+          <p><strong>Drive:</strong> File upload, folders, grid/list view, share, sync to Knowledge Base for AI.</p>
+          <p><strong>Mind Map:</strong> Knowledge graph—documents, concepts, topics. Search, focus subgraph, generate Mermaid.</p>
+          <p><strong>Chat:</strong> AI with RAG, source citations, streaming. Ollama, LM Studio, Mimir backend.</p>
+          <p>Web (mimir-drive.fly.dev), Electron desktop, or fully local. Zerwiz · WhyNot Productions.</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal-aidevsuite" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-aidevsuite-title">
+      <div class="modal">
+        <div class="modal-header">
+          <h2 id="modal-aidevsuite-title">AI Dev Suite — Local AI Tooling</h2>
+          <button type="button" class="modal-close" data-close aria-label="Close">×</button>
+        </div>
+        <div class="modal-body">
+          <p>100% local AI for developers. One-click install: Zed, OpenCode, Ollama, LM Studio. Chat with extended thinking (Qwen3, DeepSeek R1). Memory, document drive, RAG research.</p>
+          <p><strong>Debugger & Observer:</strong> Diagnose "(no response)", "terminated", "Cannot reach API". Status, logs, test chat, LLM analysis. Terminal observer. A2A agent.</p>
+          <p><strong>Components:</strong> Electron app (Chat, Drive, Memory, Tools), RAG (PDF, DOCX; hybrid BM25+vector), TUI, web, desktop. Works offline with Ollama.</p>
+          <p>Zerwiz · WhyNot Productions</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="cta-group">
+      <a href="/slides" class="btn-slides">View Full Presentation →</a>
+      <a href="https://www.nordicglobalsolutions.com" target="_blank" rel="noopener" class="btn-website">www.nordicglobalsolutions.com</a>
+    </div>
+
+    <p class="company">Nordic Global Solutions</p>
+    <p class="part-of">
+      <button type="button" data-modal="sveinerik" aria-label="Learn more about Svein-Erik Nilsen">Svein-Erik Nilsen</button> · <button type="button" data-modal="craig" aria-label="Learn more about Craig Martin">Craig Martin</button> · Zerwiz — Co-founders · <a href="https://whynotproductions.netlify.app" target="_blank" rel="noopener">WhyNot Productions</a>
+    </p>
+  </main>
+
+  <div id="modal-sveinerik" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-sveinerik-title">
+    <div class="modal">
+      <div class="modal-header">
+        <h2 id="modal-sveinerik-title">Svein-Erik Nilsen — Owner</h2>
+        <button type="button" class="modal-close" data-close aria-label="Close">×</button>
+      </div>
+      <div class="modal-body">
+        <p><strong>Engineering Financial Independence.</strong></p>
+        <p>Inventor and leader Svein-Erik Nilsen develops systems that bypass conventional economic constraints. He focuses on scalable wealth architecture and autonomous growth.</p>
+        <ul>
+          <li><strong>Innovation First</strong> — Proprietary tools that automate wealth management and operational flow.</li>
+          <li><strong>Secure Systems</strong> — Privacy-centric frameworks designed to protect assets in a volatile global economy.</li>
+          <li><strong>Global Impact</strong> — Scalable solutions that empower individuals to reclaim their financial sovereignty.</li>
+        </ul>
+        <p>Norwegian inventor and financial strategist. Technical engineering with deep understanding of market dynamics. Leads a global movement through clubs and product ecosystems.</p>
+        <p><a href="https://affliateflow.netlify.app/partners/svein-erik-nilsen" target="_blank" rel="noopener">View full profile →</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-craig" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-craig-title">
+    <div class="modal">
+      <div class="modal-header">
+        <h2 id="modal-craig-title">Craig Martin — Owner & Developer</h2>
+        <button type="button" class="modal-close" data-close aria-label="Close">×</button>
+      </div>
+      <div class="modal-body">
+        <p><strong>Growth Through Clarity.</strong></p>
+        <p>Principal DevSecOps Engineering Leader—empowering teams to achieve excellence in securing and optimizing software development lifecycles. Strategic, futuristic thinking meets hands-on expertise to drive transformative change.</p>
+        <ul>
+          <li><strong>DevSecOps & Security</strong> — Robust frameworks for secure, streamlined software development and optimized lifecycles.</li>
+          <li><strong>Strategic Vision</strong> — Long-term roadmaps aligning technology with business objectives; future-proofed solutions.</li>
+          <li><strong>Empowering Teams</strong> — Instilling confidence and motivating individuals to unlock their full potential.</li>
+        </ul>
+        <p>Experience across GE Digital (secure cloud transformation), Intel Media (streaming at scale), Verizon (OTA media), PerceptiLabs (AI modeling), Red Hat (secure AI platform).</p>
+        <p><a href="https://affliateflow.netlify.app/partners/craig-martin" target="_blank" rel="noopener">View full profile →</a></p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.querySelectorAll('[data-modal]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const id = 'modal-' + btn.dataset.modal;
+        document.getElementById(id).classList.add('active');
+        document.body.style.overflow = 'hidden';
+      });
+    });
+    document.querySelectorAll('[data-close]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        btn.closest('.modal-overlay').classList.remove('active');
+        document.body.style.overflow = '';
+      });
+    });
+    document.querySelectorAll('.modal-overlay').forEach(overlay => {
+      overlay.addEventListener('click', (e) => {
+        if (e.target === overlay) {
+          overlay.classList.remove('active');
+          document.body.style.overflow = '';
+        }
+      });
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        document.querySelectorAll('.modal-overlay.active').forEach(el => {
+          el.classList.remove('active');
+          document.body.style.overflow = '';
+        });
+      }
+    });
+  </script>
+</Base>
+
+<style>
+  .landing {
+    position: relative;
+    z-index: 1;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+
+  .landing h1 {
+    font-family: 'Syne', sans-serif;
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    font-weight: 700;
+    margin: 0 0 1rem;
+    letter-spacing: -0.02em;
+    background: linear-gradient(135deg, var(--text) 0%, var(--text-muted) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .landing h1 .highlight {
+    background: linear-gradient(135deg, var(--accent) 0%, var(--gold) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .divider {
+    width: 80px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    margin: 1.5rem auto 2rem;
+  }
+
+  .landing .tagline {
+    font-size: 1.35rem;
+    color: var(--text-muted);
+    margin: 0 0 1rem;
+    font-weight: 400;
+    max-width: 28rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .landing .intro {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    margin: 0 0 1.5rem;
+    max-width: 32rem;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.7;
+  }
+
+  .products-label {
+    font-size: 0.85rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 1rem;
+    font-weight: 500;
+  }
+
+  .platforms {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    gap: 0.75rem;
+    margin-bottom: 2.5rem;
+  }
+  .platforms span,
+  .platforms button {
+    background: var(--surface-glass);
+    backdrop-filter: blur(12px);
+    border: 1px solid var(--border);
+    padding: 0.5rem 1rem;
+    border-radius: 999px;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    font-family: inherit;
+    cursor: pointer;
+    transition: border-color 0.2s, color 0.2s;
+    min-height: 44px;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .platforms button:hover {
+    border-color: var(--border-glow);
+    color: var(--gold-soft);
+  }
+  .platforms span strong,
+  .platforms button strong { color: var(--gold-soft); font-weight: 500; }
+
+  .cta-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+  }
+
+  .btn-slides {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: linear-gradient(135deg, rgba(0,229,255,0.15) 0%, rgba(212,175,55,0.15) 100%);
+    border: 1px solid var(--border-glow);
+    color: var(--gold-soft);
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 12px;
+    font-family: inherit;
+    letter-spacing: 0.03em;
+    transition: all 0.2s;
+    cursor: pointer;
+  }
+  .btn-slides:hover {
+    background: linear-gradient(135deg, rgba(0,229,255,0.25) 0%, rgba(212,175,55,0.25) 100%);
+    border-color: var(--gold);
+    color: var(--gold);
+    transform: translateY(-1px);
+  }
+
+  .btn-website {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-size: 1rem;
+    padding-bottom: 2px;
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+    transition: color 0.2s, border-color 0.2s;
+  }
+  .btn-website:hover {
+    color: var(--gold-soft);
+    border-bottom-color: var(--gold);
+  }
+
+  .company {
+    font-size: 0.9rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-top: 3rem;
+    font-weight: 500;
+  }
+
+  .part-of {
+    margin-top: 1.5rem;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+  }
+  .part-of a {
+    color: var(--gold-soft);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(212,175,55,0.4);
+    transition: color 0.2s;
+  }
+  .part-of a:hover { color: var(--gold); }
+  .part-of button {
+    background: none;
+    border: none;
+    padding: 0;
+    font: inherit;
+    color: var(--gold-soft);
+    cursor: pointer;
+    border-bottom: 1px solid rgba(212,175,55,0.4);
+    transition: color 0.2s;
+  }
+  .part-of button:hover { color: var(--gold); }
+
+  @media (max-width: 768px) {
+    .landing { padding: 2rem 1.25rem; }
+    .landing h1 { font-size: clamp(1.75rem, 8vw, 2.5rem); }
+    .landing .tagline { font-size: 1.1rem; }
+    .landing .intro { font-size: 1rem; }
+    .platforms { grid-template-columns: repeat(2, auto); gap: 0.5rem; margin-bottom: 2rem; }
+    .platforms span { font-size: 0.8rem; padding: 0.5rem 0.75rem; }
+    .btn-slides { padding: 0.875rem 1.5rem; font-size: 1rem; min-height: 44px; min-width: 44px; }
+    .btn-website { font-size: 0.95rem; padding: 0.5rem 0; }
+    .company { font-size: 0.75rem; letter-spacing: 0.15em; margin-top: 2rem; }
+    .part-of { font-size: 0.8rem; margin-top: 1rem; }
+  }
+
+  @media (max-width: 480px) {
+    .landing { padding: 1.5rem 1rem; }
+    .platforms span, .platforms button { font-size: 0.75rem; padding: 0.4rem 0.6rem; }
+  }
+
+  .modal-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.7);
+    backdrop-filter: blur(4px);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    overflow-y: auto;
+  }
+  .modal-overlay.active { display: flex; }
+  .modal {
+    background: var(--surface-glass);
+    backdrop-filter: blur(20px);
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--gold);
+    border-radius: 16px;
+    max-width: 28rem;
+    width: 100%;
+    max-height: calc(100vh - 3rem);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem 1.5rem;
+    border-bottom: 1px solid var(--border);
+  }
+  .modal-header h2 {
+    font-family: 'Syne', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0;
+    color: var(--gold-soft);
+  }
+  .modal-close {
+    background: none;
+    border: none;
+    color: var(--text-muted);
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.25rem;
+    line-height: 1;
+    transition: color 0.2s;
+  }
+  .modal-close:hover { color: var(--gold); }
+  .modal-body {
+    padding: 1.5rem;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--text-muted);
+  }
+  .modal-body p { margin: 0 0 1rem; }
+  .modal-body ul { margin: 0 0 1rem; padding-left: 1.25rem; }
+  .modal-body li { margin-bottom: 0.4rem; }
+  .modal-body strong { color: var(--text); }
+</style>

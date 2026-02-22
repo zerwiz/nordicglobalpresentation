@@ -9,6 +9,8 @@ Single source of truth for all text, URLs, and content used across the presentat
 | Resource | URL |
 |----------|-----|
 | Website | https://www.nordicglobalsolutions.com |
+| Svein-Erik Nilsen (owner) | https://affliateflow.netlify.app/partners/svein-erik-nilsen |
+| Craig Martin (owner & developer) | https://affliateflow.netlify.app/partners/craig-martin |
 | WhyNot Productions | https://whynotproductions.netlify.app |
 | Mimir (production) | https://mimir-drive.fly.dev |
 | Mimir (demo) | https://mimirdrive.netlify.app |
@@ -41,7 +43,25 @@ Single source of truth for all text, URLs, and content used across the presentat
 
 ### Footer
 - Nordic Global Solutions
-- Zerwiz — Developer & Owner · WhyNot Productions
+- Svein-Erik Nilsen · Craig Martin · Zerwiz — Co-founders · WhyNot Productions
+
+---
+
+## Svein-Erik Nilsen — Owner
+
+- **Tagline**: Engineering Financial Independence
+- **Profile**: https://affliateflow.netlify.app/partners/svein-erik-nilsen
+- **Bio**: Inventor and leader Svein-Erik Nilsen develops systems that bypass conventional economic constraints. He focuses on scalable wealth architecture and autonomous growth.
+- **Pillars**: Innovation First (automate wealth management, operational flow) · Secure Systems (privacy-centric frameworks, protect assets) · Global Impact (financial sovereignty)
+- **Background**: Norwegian inventor and financial strategist. Technical engineering with market dynamics. Leads global movement through clubs and product ecosystems.
+
+### Craig Martin — Owner & Developer
+
+- **Tagline**: Growth Through Clarity
+- **Profile**: https://affliateflow.netlify.app/partners/craig-martin
+- **Bio**: Principal DevSecOps Engineering Leader—empowering teams to achieve excellence in securing and optimizing software development lifecycles. Strategic, futuristic thinking meets hands-on expertise to drive transformative change.
+- **Pillars**: DevSecOps & Security (robust frameworks, secure SDLC) · Strategic Vision (long-term roadmaps, future-proofed solutions) · Empowering Teams (instilling confidence, unlocking potential)
+- **Experience**: GE Digital (secure cloud), Intel Media (streaming at scale), Verizon (OTA media), PerceptiLabs (AI modeling), Red Hat (secure AI platform).
 
 ---
 
@@ -55,25 +75,33 @@ Your AI teammate. Solin leads a squad of specialist agents—writers, researcher
 **What you can do:** Content (blogs, social, emails), research, code, design, projects. Integrates with Google, Notion. Secure. Self-host or cloud.
 
 ### WorkFlowSpace — Unified Workspace
-One place for calendar, chat, tasks, and docs. Deep integration with Google—Gmail, Drive, Calendar, Meet.
+One place for calendar, chat, tasks, and docs. All-in-one workspace with Google Workspace integration.
 
-**Features:** Unified dashboard, split-view editor (chat and code side by side), AI chat with multi-model routing, task management, knowledge base.
+**Google:** Gmail, Drive, Calendar, Meet, Docs/Sheets, Tasks, Contacts. Bidirectional sync.
 
-Deep work mode and accessibility built in (WCAG 2.1 AA).
+**Editor:** Split-view—chat on left, code/editor on right. AI response insertion. Document and Code mode. Preview, export (PNG, PDF). Multi-model (GPT-4, Claude, Gemini, Ollama).
+
+**Tasks & Knowledge:** Kanban boards, drag-and-drop, custom workflows. Knowledge base with semantic search, mind maps. AI-powered queries with source citations.
+
+**AI & Accessibility:** Strategy Agent, intelligent model routing. Deep Work Mode, Restoration Room. WCAG 2.1 AA compliant.
 
 ### Affiliate Flow — Marketing Automation
-Full-stack affiliate marketing: landing pages, communications, and AI-generated social content.
+Full-stack affiliate marketing: landing pages, communications, and AI-generated social content. One platform for your entire marketing funnel.
 
-**Features:** Deploy landing pages (Astro, static HTML), email/SMS/WhatsApp with AI-generated messages, multi-platform social (LinkedIn, X, Instagram, TikTok, YouTube).
+**Landing Pages:** Deploy and manage pages (Astro, static HTML). Optional Netlify deploy hook, auto-deploy.
 
-Dashboard, calendar, contacts, products, affiliates. Optional Phoenix/Elixir backend.
+**Communications:** Email, SMS, WhatsApp with AI-generated messages. Promotional, follow-up, reminder. Contact groups, tone options. Gmail, Outlook, custom SMTP.
+
+**AI Social:** Multi-platform—LinkedIn, X, Facebook, Instagram, TikTok, YouTube. Platform-specific prompts. Push now or schedule. Posts appear in Calendar.
+
+**Dashboard:** Overview (clicks, engagement, KPIs), Calendar, Landings, Comms, AI Social, Contacts, Products, Affiliates, Settings. Phoenix/Elixir backend.
 
 ### BitNexus — Decentralized Affiliate Revenue
-AI-powered platform combining automated trading, network marketing, and content generation.
+AI-powered platform combining automated trading, network marketing, and content generation. Decentralized affiliate revenue with passive income streams.
 
-**Features:** MEV Bot & XAB Bot staking (10–18% APY), Alliance Network (MLM), AI Content Generator, Marketplace with due diligence. ISO 27001 & 27701 certified.
+**Key Features:** Social networking (chat, friends). Alliance Network (MLM, tier progression). Marketplace with due diligence for products (S–F ranking, CertiK, OpenZeppelin, KPMG audits). Trust: ISO 27001 & 27701 certified. MEV Bot & XAB Bot staking (10–18% APY). AI Content Generator.
 
-Launch January 21, 2026. Genesis phase: 500 licenses. NXC token. $227B+ market opportunity.
+**Launch:** January 21, 2026. Genesis phase: 500 licenses. NXC token. $227B+ market opportunity.
 
 ### Mimir — Knowledge & AI
 Multi-tenant Knowledge & AI app: Drive, Mind Map, RAG-powered Chat, Mermaid sequence diagrams.
@@ -146,18 +174,20 @@ All in one place. Secure. You can self-host or use the cloud.
 ### Slide 5: WorkFlowSpace
 **WorkFlowSpace: One Workspace for Teams**
 
-A single place for calendar, chat, tasks, and docs. Works with Google—Gmail, Drive, Calendar, Meet.
+A single place for calendar, chat, tasks, and docs. Google Workspace integration—Gmail, Drive, Calendar, Meet, Docs/Sheets, Tasks.
 
-- Unified dashboard—no switching between tools
-- Split-view editor: chat and code side by side
-- Deep work mode and accessibility built in
+**Editor & AI:** Split-view (chat + code). AI multi-model routing (GPT-4, Claude, Gemini, Ollama). Strategy Agent. Preview, export (PNG, PDF).
+
+**Tasks & Knowledge:** Kanban boards, drag-and-drop, custom workflows. Knowledge base, semantic search, mind maps. Deep Work Mode, WCAG 2.1 AA.
 
 ### Slide 6: Affiliate Flow
 **Affiliate Flow: Marketing Automation**
 
-Deploy landing pages, create social content with AI, manage email and SMS outreach.
+Full-stack affiliate marketing: landing pages, communications, and AI-generated social content. One platform for your entire funnel.
 
-One platform for your marketing funnel.
+**Landing & Comms:** Landing pages (Astro, static HTML, Netlify deploy). Email, SMS, WhatsApp with AI-generated messages. Contact groups, tone options. Gmail/Outlook/SMTP.
+
+**AI Social & Dashboard:** LinkedIn, X, Instagram, TikTok, YouTube. Platform prompts, schedule or push now. Calendar, contacts, products, affiliates.
 
 ### Slide 7: BitNexus
 **BitNexus: Decentralized Affiliate Revenue**
@@ -165,10 +195,10 @@ One platform for your marketing funnel.
 AI-powered platform combining automated trading, network marketing, and content generation. Passive income through MEV & XAB bots, affiliate commissions, and NXC token.
 
 **Key Features**  
-MEV Bot & XAB Bot staking (10–18% APY), Alliance Network (MLM), AI Content Generator, ISO 27001 & 27701 Certified.
+Social networking (chat, friends). Alliance Network (MLM, tier progression). Marketplace with due diligence for products (S–F ranking, CertiK, OpenZeppelin, KPMG audits). Trust: ISO 27001 & 27701 certified. MEV Bot & XAB Bot staking (10–18% APY). AI Content Generator.
 
 **Launch**  
-Genesis phase: 500 licenses. Launch January 21, 2026. $227B+ market opportunity.
+Genesis phase: 500 licenses. Launch January 21, 2026. NXC token. $227B+ market opportunity.
 
 ### Slide 8: Mimir
 **Mimir: Knowledge & AI**
@@ -195,7 +225,7 @@ Zerwiz · WhyNot Productions
 ### Slide 10: Our Stack
 **How We Build**
 
-React, TypeScript, Elixir, Phoenix.
+React, TypeScript, Rust, Elixir, Phoenix. Cursor, Google AI Suite.
 
 We use OpenAI and Claude, and support self-hosted models like Ollama.
 
@@ -207,6 +237,8 @@ Help us build Ona, WorkFlowSpace, Affiliate Flow, BitNexus, Mimir, and AI Dev Su
 **www.nordicglobalsolutions.com**
 
 Build the future. Nordic Global Solutions.
+
+**Svein-Erik Nilsen · Craig Martin · Zerwiz — Co-founders · WhyNot Productions**
 
 ---
 

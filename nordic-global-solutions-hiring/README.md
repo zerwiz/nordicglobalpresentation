@@ -1,45 +1,58 @@
 # Nordic Global Solutions — Hiring Presentation
 
-Recruitment / hiring ad for Nordic Global Solutions. Simple, non-technical overview of what we build and why we’re hiring.
+Recruitment / hiring ad for Nordic Global Solutions. Simple, non-technical overview of what we build and why we're hiring.
 
 ## Purpose
 
 - Attract people who want to build the future of tech
-- Introduce Ona, WorkFlowSpace, and Affiliate Flow in plain language
+- Introduce Ona, WorkFlowSpace, Affiliate Flow, BitNexus, Mimir, AI Dev Suite in plain language
 - Drive traffic to [www.nordicglobalsolutions.com](https://www.nordicglobalsolutions.com)
 
-## Files
+## Tech
 
-| File | Purpose |
-|------|---------|
-| `index.html` | Landing page with CTA button to view presentation |
-| `slides.html` | Full slide deck; works offline, no build required |
-| `slides.md` | Markdown source; use for editing or exporting to other formats |
+- **Astro** 4 — static site generator
+- Routes: `/` (landing), `/slides` (presentation), `/404` (error)
 
-## How to Use
+## Quick Start
 
-1. Open `index.html` in a browser for the landing page.
-2. Click **View Full Presentation** to open the slide deck.
-3. In slides: use **←** / **→** keys or the on-screen buttons.
-4. Press **F11** for fullscreen. Use **← Back to landing** to return.
+```bash
+npm install
+npm run dev
+```
+
+Open http://localhost:4321
+
+## Build
+
+```bash
+npm run build
+```
+
+Output in `dist/`.
 
 ## Deploy to Netlify
 
-1. Connect your repository to Netlify.
-2. Set **Base directory**: (leave empty if deploying from `Presentations` repo root).
-3. Build settings are in `../netlify.toml`:
-   - **Publish directory**: `nordic-global-solutions-hiring`
-   - **Build command**: No build required (static site)
+Build settings in `../netlify.toml`:
+- **Build command**: `cd nordic-global-solutions-hiring && npm install && npm run build`
+- **Publish directory**: `nordic-global-solutions-hiring/dist`
 
-Or deploy the `nordic-global-solutions-hiring` folder directly—Netlify will detect it as a static site.
+## How to Use
+
+1. Open `/` for the landing page.
+2. Click **View Full Presentation** to open the slide deck at `/slides`.
+3. In slides: use **←** / **→** keys or the on-screen buttons.
+4. Press **F11** for fullscreen. Use **← Back to landing** to return.
 
 ## Content Summary
 
 - Slide 1: Hero — Build the future of tech
-- Slide 2: Three platforms (Ona, WorkFlowSpace, Affiliate Flow)
+- Slide 2: Six platforms (Ona, WorkFlowSpace, Affiliate Flow, BitNexus, Mimir, AI Dev Suite)
 - Slide 3: Ona — Your AI teammate (Solin, multi-channel)
 - Slide 4: Ona — Capabilities (content, research, code, design, integrations)
 - Slide 5: WorkFlowSpace — Unified workspace
 - Slide 6: Affiliate Flow — Marketing automation
-- Slide 7: Tech stack
-- Slide 8: Call to action — Join the team, website link
+- Slide 7: BitNexus — Decentralized affiliate revenue
+- Slide 8: Mimir — Knowledge & AI
+- Slide 9: AI Dev Suite — Local AI tooling
+- Slide 10: Tech stack
+- Slide 11: Call to action — Join the team, website link

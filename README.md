@@ -11,19 +11,19 @@ Static, mobile-friendly presentation showcasing **Ona**, **WorkFlowSpace**, **Af
 **Local**
 
 ```bash
-# Clone and open
 git clone https://github.com/zerwiz/nordicglobalpresentation.git
 cd nordicglobalpresentation/nordic-global-solutions-hiring
-open index.html   # or: start index.html (Windows), xdg-open index.html (Linux)
+npm install
+npm run dev
 ```
 
-No build step. No dependencies. Opens in any modern browser.
+Open http://localhost:4321
 
 **Deploy to Netlify**
 
 1. Connect this repo to [Netlify](https://app.netlify.com)
-2. Publish directory: `nordic-global-solutions-hiring`
-3. Build command: leave empty (static HTML)
+2. Publish directory: `nordic-global-solutions-hiring/dist`
+3. Build command: `cd nordic-global-solutions-hiring && npm install && npm run build`
 4. Branch: `main` — every push deploys
 
 Config is in [netlify.toml](netlify.toml).
@@ -34,8 +34,8 @@ Config is in [netlify.toml](netlify.toml).
 
 | Page | Purpose |
 |------|---------|
-| **Landing** (`index.html`) | Hero, platform overview, CTA to view presentation |
-| **Slides** (`slides.html`) | 11-slide deck: platforms, Ona, WorkFlowSpace, Affiliate Flow, BitNexus, Mimir, AI Dev Suite, stack, CTA |
+| **Landing** (`/`) | Hero, platform overview, CTA to view presentation |
+| **Slides** (`/slides`) | 11-slide deck: platforms, Ona, WorkFlowSpace, Affiliate Flow, BitNexus, Mimir, AI Dev Suite, stack, CTA |
 | **404** | Custom error page with links back |
 
 **Interaction**
@@ -63,11 +63,14 @@ Config is in [netlify.toml](netlify.toml).
 
 ```
 .
-├── nordic-global-solutions-hiring/   # Deploy this folder
-│   ├── index.html      # Landing page
-│   ├── slides.html     # Slide deck
+├── nordic-global-solutions-hiring/   # Astro project
+│   ├── src/
+│   │   ├── pages/       # index.astro, slides.astro, 404.astro
+│   │   ├── layouts/     # Base.astro
+│   │   └── styles/      # global.css
+│   ├── public/         # favicon, icon, og-image, robots, sitemap
 │   ├── slides.md       # Content source
-│   └── 404.html        # Error page
+│   └── dist/            # Build output (gitignored)
 ├── docs/               # Documentation
 │   ├── OVERVIEW.md
 │   ├── COMPANY_PROFILE.md
@@ -120,7 +123,7 @@ See [rules/services/github/rules.md](rules/services/github/rules.md) for full wo
 
 ## Tech
 
-- Static HTML, CSS, JS
+- [Astro](https://astro.build) 4 — static site generator
 - [Syne](https://fonts.google.com/specimen/Syne) + [Outfit](https://fonts.google.com/specimen/Outfit) (Google Fonts)
 - Mobile-first, touch-friendly, swipe navigation on slides
 - Netlify for hosting

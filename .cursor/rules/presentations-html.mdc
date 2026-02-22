@@ -1,0 +1,36 @@
+---
+description: HTML and CSS standards for presentation pages
+globs: nordic-global-solutions-hiring/*.html
+alwaysApply: false
+---
+
+# Presentation HTML/CSS Standards
+
+## Mobile-First & Responsive
+
+- All new pages must be **mobile-friendly**
+- Use `clamp()` for fluid typography: `clamp(min, preferred, max)`
+- Add `@media (max-width: 768px)` for tablets/phones
+- Add `@media (max-width: 480px)` for small phones
+- Touch targets: minimum **44×44px** for buttons and links
+- Add `-webkit-tap-highlight-color: transparent` on touch links
+- Use `-webkit-overflow-scrolling: touch` for scrollable areas on iOS
+
+## Viewport
+
+Always include:
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+```
+
+## Slide Deck Specific
+
+- Two-column layouts → single column on mobile (`grid-template-columns: 1fr` at 768px)
+- Reduce slide padding on mobile (e.g. `4rem 5rem` → `1.5rem` horizontal)
+- Add touch/swipe handlers for slide navigation on mobile
+- Fixed nav (prev/next) must not overlap content; use `min-height` on slides for scroll clearance
+
+## Structure
+
+- Keep styles inline or in `<style>` (no external CSS for portability)
+- Use relative links: `index.html`, `slides.html` (works on Netlify and local)

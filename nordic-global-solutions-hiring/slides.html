@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Build the Future of Tech — Nordic Global Solutions</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #030306;
+      --bg-mid: #08080d;
+      --surface: rgba(255,255,255,0.03);
+      --surface-glass: rgba(255,255,255,0.04);
+      --border: rgba(255,255,255,0.06);
+      --border-glow: rgba(212,175,55,0.3);
+      --accent: #00e5ff;
+      --accent-cyan: #5ce1e6;
+      --gold: #d4af37;
+      --gold-soft: #e8c96a;
+      --text: #f4f4f6;
+      --text-muted: #a1a1aa;
+      --text-dim: #71717a;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    html, body { margin: 0; padding: 0; min-height: 100%; }
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      font-weight: 300;
+      overflow-x: hidden;
+    }
+    @media (min-width: 769px) {
+      body { height: 100vh; overflow: hidden; }
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 80% 50% at 50% -20%, rgba(0,229,255,0.08) 0%, transparent 50%),
+        radial-gradient(ellipse 60% 40% at 100% 100%, rgba(212,175,55,0.05) 0%, transparent 50%),
+        linear-gradient(180deg, #030306 0%, #0a0a12 50%, #06060a 100%);
+      pointer-events: none;
+      z-index: 0;
+    }
+    body::after {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+      background-size: 60px 60px;
+      pointer-events: none;
+      z-index: 0;
+      opacity: 0.5;
+    }
+    
+    .slide {
+      display: none;
+      min-height: 100vh;
+      height: 100vh;
+      padding: 4rem 5rem;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+      z-index: 1;
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+    .slide.active { display: flex; }
+    @media (max-width: 768px) {
+      .slide { min-height: 100vh; height: auto; padding: 5rem 1.5rem 6rem; justify-content: flex-start; }
+    }
+    
+    .slide h1 {
+      font-family: 'Syne', sans-serif;
+      font-size: clamp(1.75rem, 5vw, 3.75rem);
+      font-weight: 700;
+      margin: 0 0 1.5rem;
+      letter-spacing: -0.02em;
+      background: linear-gradient(135deg, var(--text) 0%, var(--text-muted) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .slide h1 .highlight { background: linear-gradient(135deg, var(--accent) 0%, var(--gold) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .slide h2 {
+      font-family: 'Syne', sans-serif;
+      font-size: clamp(1.15rem, 2.5vw, 1.5rem);
+      font-weight: 600;
+      margin: 0 0 1rem;
+      color: var(--gold-soft);
+      letter-spacing: -0.01em;
+    }
+    .slide p { font-size: clamp(0.95rem, 2vw, 1.2rem); line-height: 1.8; color: var(--text-muted); margin: 0 0 1rem; font-weight: 300; }
+    .slide ul { font-size: clamp(0.9rem, 2vw, 1.15rem); line-height: 2; color: var(--text-muted); padding-left: 1.5rem; list-style: none; }
+    .slide ul li { margin-bottom: 0.6rem; padding-left: 1rem; position: relative; font-weight: 300; }
+    .slide ul li::before { content: ''; position: absolute; left: 0; top: 0.65em; width: 4px; height: 4px; background: linear-gradient(135deg, var(--accent), var(--gold)); border-radius: 50%; }
+    .slide ul li strong { color: var(--gold-soft); font-weight: 500; }
+    .slide .cta { font-size: 1.35rem; margin-top: 2.5rem; }
+    .slide .cta a {
+      color: var(--gold-soft);
+      text-decoration: none;
+      font-weight: 500;
+      letter-spacing: 0.05em;
+      padding-bottom: 2px;
+      border-bottom: 1px solid rgba(212,175,55,0.5);
+      transition: color 0.2s, border-color 0.2s;
+    }
+    .slide .cta a:hover { color: var(--gold); border-bottom-color: var(--gold); }
+    
+    .hero { text-align: center; }
+    .hero h1 { font-size: clamp(2rem, 6vw, 4.5rem); margin-bottom: 1.5rem; }
+    .hero .tagline { font-size: 1.5rem; color: var(--text-muted); margin-bottom: 1.5rem; font-weight: 400; }
+    .hero p:not(.tagline):not(.cta) { max-width: 32rem; margin-left: auto; margin-right: auto; }
+    .hero .company {
+      font-size: 1rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-top: 3rem;
+      font-weight: 500;
+    }
+    
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start; }
+    @media (max-width: 768px) {
+      .two-col { grid-template-columns: 1fr; gap: 1.5rem; }
+      .two-col .card { padding: 1.25rem; }
+    }
+    .two-col .card {
+      background: var(--surface-glass);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid var(--border);
+      padding: 2rem;
+      border-radius: 16px;
+      border-left: 3px solid var(--gold);
+    }
+    
+    .caps {
+      font-size: 0.8rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.75rem;
+      font-weight: 500;
+    }
+    
+    .footer-nav {
+      position: fixed;
+      bottom: 1rem;
+      right: 1rem;
+      display: flex;
+      gap: 0.5rem;
+      z-index: 100;
+    }
+    @media (min-width: 769px) {
+      .footer-nav { bottom: 2rem; right: 2.5rem; }
+    }
+    .footer-nav button {
+      background: var(--surface-glass);
+      backdrop-filter: blur(12px);
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      width: 48px;
+      height: 48px;
+      min-width: 48px;
+      min-height: 48px;
+      border-radius: 12px;
+      cursor: pointer;
+      font-size: 1.25rem;
+      transition: all 0.2s;
+    }
+    .footer-nav button:hover {
+      background: rgba(212,175,55,0.15);
+      border-color: var(--border-glow);
+      color: var(--gold);
+    }
+    .slide-num {
+      position: fixed;
+      bottom: 1rem;
+      left: 1rem;
+      color: var(--text-dim);
+      font-size: 0.8rem;
+      letter-spacing: 0.05em;
+    }
+    @media (min-width: 769px) {
+      .slide-num { bottom: 2rem; left: 2.5rem; font-size: 0.85rem; }
+    }
+    
+    .back-link {
+      position: fixed;
+      top: 1rem;
+      left: 1rem;
+      z-index: 100;
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem;
+      min-height: 44px;
+      min-width: 44px;
+      transition: color 0.2s;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .back-link:hover { color: var(--gold); }
+    @media (min-width: 769px) {
+      .back-link { top: 2rem; left: 2.5rem; padding: 0; }
+    }
+    
+    .card { background: var(--surface-glass); backdrop-filter: blur(20px); padding: 1.5rem 2rem; border-radius: 16px; border: 1px solid var(--border); }
+    
+    .divider {
+      width: 48px;
+      height: 1px;
+      background: linear-gradient(90deg, var(--accent), transparent);
+      margin: 1.5rem 0;
+    }
+    
+    .hero .divider { margin: 2rem auto; background: linear-gradient(90deg, transparent, var(--gold), transparent); width: 80px; }
+  </style>
+</head>
+<body>
+  <a href="index.html" class="back-link">← Back to landing</a>
+
+  <div class="slide active" data-n="1">
+    <div class="hero">
+      <h1>Build the <span class="highlight">Future</span> of Tech</h1>
+      <div class="divider"></div>
+      <p class="tagline">We're looking for people who want to shape what comes next.</p>
+      <p>Nordic Global Solutions develops platforms that help people and teams work smarter.</p>
+      <p class="company">nordicglobalsolutions.com</p>
+    </div>
+  </div>
+
+  <div class="slide" data-n="2">
+    <p class="caps">What We Build</p>
+    <h1>Our Platforms</h1>
+    <p>We focus on tools that make a real difference—AI that helps you work, workspaces that bring teams together, and automation that scales your reach.</p>
+    <ul>
+      <li><strong>Ona</strong> — Your AI operating system</li>
+      <li><strong>WorkFlowSpace</strong> — One place for teams</li>
+      <li><strong>Affiliate Flow</strong> — Marketing automation</li>
+      <li><strong>BitNexus</strong> — Decentralized affiliate revenue platform</li>
+    </ul>
+  </div>
+
+  <div class="slide" data-n="3">
+    <p class="caps">Ona</p>
+    <h1>Your AI Teammate</h1>
+    <p>Ona is a system where AI helps you get things done. Instead of one chatbot, you get a whole squad.</p>
+    <div class="two-col">
+      <div class="card">
+        <h2>Solin — Your lead agent</h2>
+        <p>You talk to Solin. Solin brings in the right specialist when you need them: writers, researchers, developers, marketers.</p>
+      </div>
+      <div class="card">
+        <h2>How you use it</h2>
+        <p>Web, Telegram, Discord, WhatsApp, Signal. One thread, all your agents. Text or voice.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide" data-n="4">
+    <p class="caps">Ona — What You Can Do</p>
+    <h1>Content, Research, Code, Design</h1>
+    <ul>
+      <li><strong>Content</strong> — Drafts, blogs, social posts, landing pages, emails</li>
+      <li><strong>Research</strong> — Competitor research, trends, SEO</li>
+      <li><strong>Code</strong> — Implement features, run builds, scripts</li>
+      <li><strong>Design</strong> — Mockups, layouts, visuals</li>
+      <li><strong>Projects</strong> — Tasks, todos, follow-ups</li>
+      <li><strong>Integrations</strong> — Google, email, SMS, social, Notion</li>
+    </ul>
+    <p>All in one place. Secure. You can self-host or use the cloud.</p>
+  </div>
+
+  <div class="slide" data-n="5">
+    <p class="caps">WorkFlowSpace</p>
+    <h1>One Workspace for Teams</h1>
+    <p>A single place for calendar, chat, tasks, and docs. Works with Google—Gmail, Drive, Calendar, Meet.</p>
+    <ul>
+      <li>Unified dashboard—no switching between tools</li>
+      <li>Split-view editor: chat and code side by side</li>
+      <li>Deep work mode and accessibility built in</li>
+    </ul>
+  </div>
+
+  <div class="slide" data-n="6">
+    <p class="caps">Affiliate Flow</p>
+    <h1>Marketing Automation</h1>
+    <p>Deploy landing pages, create social content with AI, manage email and SMS outreach. One platform for your marketing funnel.</p>
+  </div>
+
+  <div class="slide" data-n="7">
+    <p class="caps">BitNexus</p>
+    <h1>Decentralized Affiliate Revenue</h1>
+    <p>AI-powered platform combining automated trading, network marketing, and content generation. Passive income through MEV & XAB bots, affiliate commissions, and NXC token.</p>
+    <div class="two-col">
+      <div class="card">
+        <h2>Key Features</h2>
+        <ul>
+          <li>MEV Bot & XAB Bot staking (10–18% APY)</li>
+          <li>Alliance Network (MLM)</li>
+          <li>AI Content Generator</li>
+          <li>ISO 27001 & 27701 Certified</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h2>Launch</h2>
+        <p>Genesis phase: 500 licenses. Launch January 21, 2026. $227B+ market opportunity.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide" data-n="8">
+    <p class="caps">How We Build</p>
+    <h1>Our Stack</h1>
+    <p>React, TypeScript, Elixir, Phoenix. We use OpenAI and Claude, and support self-hosted models like Ollama.</p>
+  </div>
+
+  <div class="slide" data-n="9">
+    <div class="hero">
+      <h1>Join the <span class="highlight">Team</span></h1>
+      <div class="divider"></div>
+      <p class="tagline">Help us build Ona, WorkFlowSpace, Affiliate Flow, and BitNexus.</p>
+      <p class="cta">
+        <a href="https://nordicglobalsolutions.com" target="_blank" rel="noopener">nordicglobalsolutions.com</a>
+      </p>
+      <p class="company">Build the future. Nordic Global Solutions.</p>
+    </div>
+  </div>
+
+  <div class="slide-num"><span id="current">1</span> / <span id="total">9</span></div>
+  <div class="footer-nav">
+    <button id="prev" aria-label="Previous slide">←</button>
+    <button id="next" aria-label="Next slide">→</button>
+  </div>
+
+  <script>
+    const slides = document.querySelectorAll('.slide');
+    const total = slides.length;
+    const currentEl = document.getElementById('current');
+    document.getElementById('total').textContent = total;
+    
+    let idx = 0;
+    function show(i) {
+      idx = Math.max(0, Math.min(i, total - 1));
+      slides.forEach((s, k) => s.classList.toggle('active', k === idx));
+      currentEl.textContent = idx + 1;
+    }
+    document.getElementById('prev').onclick = () => show(idx - 1);
+    document.getElementById('next').onclick = () => show(idx + 1);
+    document.addEventListener('keydown', e => {
+      if (e.key === 'ArrowLeft') show(idx - 1);
+      if (e.key === 'ArrowRight') show(idx + 1);
+    });
+
+    // Touch swipe for mobile
+    let touchStartX = 0;
+    document.addEventListener('touchstart', e => { touchStartX = e.touches[0].clientX; }, { passive: true });
+    document.addEventListener('touchend', e => {
+      const diff = touchStartX - e.changedTouches[0].clientX;
+      if (Math.abs(diff) > 50) diff > 0 ? show(idx + 1) : show(idx - 1);
+    }, { passive: true });
+  </script>
+</body>
+</html>

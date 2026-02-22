@@ -1,0 +1,39 @@
+---
+description: Project structure and conventions for Presentations repo
+alwaysApply: true
+---
+
+# Presentations Project Rules
+
+## Repo Structure
+
+- `/docs/` — All company and product documentation
+- `/nordic-global-solutions-hiring/` — Hiring presentation (landing + slides)
+- `/rules/services/github/` — GitHub workflow rules (main → Netlify)
+- `netlify.toml` — Netlify build config; publish directory: `nordic-global-solutions-hiring`
+- `.github/PULL_REQUEST_TEMPLATE.md` — PR template
+
+## GitHub / Netlify
+
+- **Repo**: github.com/zerwiz/nordicglobalpresentation
+- **Branch**: `main` deploys to Netlify on push
+- **Rules**: See `rules/services/github/rules.md`
+
+## Conventions
+
+- **Landing page**: `index.html` — hero, CTA, link to slides
+- **Slides**: `slides.html` — full deck with nav
+- **Content source**: `slides.md` — edit here when regenerating slides
+- **Docs**: Update `docs/INDEX.md` and `docs/OVERVIEW.md` when adding new docs
+
+## Nordic Global Solutions
+
+- Platforms: Ona, WorkFlowSpace, Affiliate Flow, BitNexus
+- Website: nordicglobalsolutions.com
+- Design: Futuristic + luxurious — dark bg, cyan/gold accents, Syne + Outfit fonts
+
+## When Adding Content
+
+1. Add to `docs/` first, then to slides
+2. Keep slide copy simple — no deep tech jargon
+3. Match existing aesthetic (glassmorphism, gradients, gold accents)

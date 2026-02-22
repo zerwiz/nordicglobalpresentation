@@ -1,6 +1,6 @@
 # Nordic Global Solutions — Overview
 
-**Website**: [nordicglobalsolutions.com](https://nordicglobalsolutions.com)
+**Website**: [www.nordicglobalsolutions.com](https://www.nordicglobalsolutions.com)
 
 ## Mission
 
@@ -19,7 +19,7 @@ We are seeking people to build the future of technology. Nordic Global Solutions
 
 We are looking for people who want to shape what comes next. Join us to build Ona, WorkFlowSpace, and Affiliate Flow.
 
-Visit [nordicglobalsolutions.com](https://nordicglobalsolutions.com) for open roles.
+Visit [www.nordicglobalsolutions.com](https://www.nordicglobalsolutions.com) for open roles.
 
 ## Related Docs
 
@@ -31,4 +31,5 @@ Visit [nordicglobalsolutions.com](https://nordicglobalsolutions.com) for open ro
 | [WORKFLOWSPACE.md](WORKFLOWSPACE.md) | WorkFlowSpace platform details |
 | [AFFILIATE_FLOW.md](AFFILIATE_FLOW.md) | Affiliate Flow platform details |
 | [BITNEXUS_PRODUCT.md](BITNEXUS_PRODUCT.md) | BitNexus product presentation |
+| [WHYNOT_PRODUCTIONS.md](WHYNOT_PRODUCTIONS.md) | WhyNot Productions (Zerwiz) — AI Dev Suite, courses |
 | [TECH_STACK.md](TECH_STACK.md) | Technology stack |

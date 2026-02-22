@@ -258,7 +258,7 @@ BitNexus provides a complete ecosystem where users can:
 **Nordic Global**  
 - Official Discord: [discord.gg/UhsYV4aytG](https://discord.gg/UhsYV4aytG)  
 - Admin/Developer Discord: [discord.gg/YRYJMGsrW2](https://discord.gg/YRYJMGsrW2)  
-- Nordic Global Solutions: [nordicglobalsolutions.com](https://nordicglobalsolutions.com)  
+- Nordic Global Solutions: [www.nordicglobalsolutions.com](https://www.nordicglobalsolutions.com)  
 - Nordic Global Trade: [nordicglobaltrade.com](https://www.nordicglobaltrade.com)  
 
 **BitNexus**  

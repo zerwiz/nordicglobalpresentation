@@ -6,7 +6,7 @@ Recruitment / hiring ad for Nordic Global Solutions. Simple, non-technical overv
 
 - Attract people who want to build the future of tech
 - Introduce Ona, WorkFlowSpace, and Affiliate Flow in plain language
-- Drive traffic to [nordicglobalsolutions.com](https://nordicglobalsolutions.com)
+- Drive traffic to [www.nordicglobalsolutions.com](https://www.nordicglobalsolutions.com)
 
 ## Files
 

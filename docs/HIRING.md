@@ -29,6 +29,6 @@ Nordic Global Solutions develops platforms that help people and teams work smart
 
 Help us build Ona, WorkFlowSpace, and Affiliate Flow.
 
-Visit [nordicglobalsolutions.com](https://nordicglobalsolutions.com) for open roles.
+Visit [www.nordicglobalsolutions.com](https://www.nordicglobalsolutions.com) for open roles.
 
 Build the future. Nordic Global Solutions.

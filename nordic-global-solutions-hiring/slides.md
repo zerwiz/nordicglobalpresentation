@@ -10,7 +10,7 @@ We're looking for people who want to shape what comes next.
 
 Nordic Global Solutions develops platforms that help people and teams work smarter.
 
-**nordicglobalsolutions.com**
+**www.nordicglobalsolutions.com**
 
 ---
 
@@ -108,6 +108,6 @@ We use OpenAI and Claude, and support self-hosted models like Ollama.
 
 Help us build Ona, WorkFlowSpace, Affiliate Flow, and BitNexus.
 
-**nordicglobalsolutions.com**
+**www.nordicglobalsolutions.com**
 
 Build the future. Nordic Global Solutions.

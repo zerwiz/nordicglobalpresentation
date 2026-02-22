@@ -2,7 +2,7 @@
 
 **Tagline**: Innovation with a Human Pulse.
 
-**Website**: [nordicglobalsolutions.com](https://nordicglobalsolutions.com)  
+**Website**: [www.nordicglobalsolutions.com](https://www.nordicglobalsolutions.com)  
 **Related**: [nordicglobaltrade.com](https://www.nordicglobaltrade.com)
 
 ---
@@ -99,6 +99,16 @@ Many of our developers are on the autism spectrum or have ADHD. In the right env
 - **Cost** — Efficient  
 - **QA** — Rigorous  
 - **Teams** — Stable  
+
+---
+
+## Team / Ownership
+
+| Role | Person | Notes |
+|------|--------|-------|
+| **Developer & Owner** | Zerwiz | WhyNot Productions. AI Dev Suite, courses, app development. [whynotproductions.netlify.app](https://whynotproductions.netlify.app) |
+
+*See [BITNEXUS_PRODUCT.md](BITNEXUS_PRODUCT.md) for BitNexus team (Josef Lindbom, Craig Martin, etc.).*
 
 ---
 

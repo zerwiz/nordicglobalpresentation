@@ -1,6 +1,6 @@
 # Nordic Global Presentation
 
-> Hiring presentation and landing page for [Nordic Global Solutions](https://nordicglobalsolutions.com)—seeking builders for the future of tech.
+> Hiring presentation and landing page for [Nordic Global Solutions](https://www.nordicglobalsolutions.com)—seeking builders for the future of tech.
 
 Static, mobile-friendly presentation showcasing **Ona**, **WorkFlowSpace**, **Affiliate Flow**, and **BitNexus**.
 
@@ -96,6 +96,7 @@ Config is in [netlify.toml](netlify.toml).
 | [WORKFLOWSPACE](docs/WORKFLOWSPACE.md) | WorkFlowSpace details |
 | [AFFILIATE_FLOW](docs/AFFILIATE_FLOW.md) | Affiliate Flow details |
 | [BITNEXUS_PRODUCT](docs/BITNEXUS_PRODUCT.md) | BitNexus product overview |
+| [WHYNOT_PRODUCTIONS](docs/WHYNOT_PRODUCTIONS.md) | WhyNot Productions — Zerwiz, AI Dev Suite, courses |
 | [TECH_STACK](docs/TECH_STACK.md) | Technology stack |
 | [INDEX](docs/INDEX.md) | Doc index |
 
@@ -121,4 +122,4 @@ See [rules/services/github/rules.md](rules/services/github/rules.md) for full wo
 
 ---
 
-**Nordic Global Solutions** — [nordicglobalsolutions.com](https://nordicglobalsolutions.com)
+**Nordic Global Solutions** — [www.nordicglobalsolutions.com](https://www.nordicglobalsolutions.com)

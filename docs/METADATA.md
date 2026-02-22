@@ -185,7 +185,25 @@ All absolute URLs assume: `https://www.nordicglobalsolutions.com`
 
 If the site deploys to a different domain (e.g. `https://nordicglobalpresentation.netlify.app`):
 
-1. Replace `https://www.nordicglobalsolutions.com` in all meta tags
+1. Replace `https://nordicglobal.netlify.app` in og:image, og:url, twitter:image
 2. Update sitemap.xml
 3. Update canonical links
 4. Update JSON-LD @id and url fields
+
+**Current deploy:** `https://nordicglobal.netlify.app` — og:image and og:url use this domain for social sharing.
+
+---
+
+## Social Sharing Troubleshooting
+
+**Image or metadata not showing when sharing?**
+
+1. **Use absolute URLs** — og:image and twitter:image must be full URLs (e.g. `https://nordicglobal.netlify.app/og-image.png`), not relative (`/og-image.png`).
+
+2. **Clear platform cache** — Social sites cache previews. Use their debuggers to refresh:
+   - [Facebook Sharing Debugger](https://developers.facebook.com/tools/debug/)
+   - [LinkedIn Post Inspector](https://www.linkedin.com/post-inspector/)
+   - [Twitter Card Validator](https://cards-dev.twitter.com/validator)
+   - [Pinterest Rich Pins Validator](https://developers.pinterest.com/tools/url-debugger/)
+
+3. **Image requirements** — 1200×630px, PNG or JPG, under 5MB.
